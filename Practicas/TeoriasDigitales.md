@@ -364,14 +364,15 @@ En la tarea sólo agrega el enlace de tu proyecto de _CodeSandbox_.
 
 ### Práctica 3
 
-1.  Crea un **_CodeSandbox_** de tipo **_static_** y ponle el nombre **"Práctica-3-Tu-Nombre-Apellido"**, reemplaza Tu-Nombre-Apellido por tu nombre y apellido.
-2.  En tu documento **_index.html_** en el **_head_** deberás tener:
+Crea un **_CodeSandbox_** de tipo **_static_** y ponle el nombre **"Práctica-3-Tu-Nombre-Apellido"**, reemplaza Tu-Nombre-Apellido por tu nombre y apellido.
+
+1.  En tu documento **_index.html_** en el **_head_** deberás tener:
     - Título.
     - Meta descripción.
     - Idioma en español.
     - _Links_ hacia una Fuente de _Google Fonts_.
     - _Link_ a tu hoja de estilos _CSS_.
-3.  Cómo contenido en el **_body_** deberás incluir:
+2.  Cómo contenido en el **_body_** deberás incluir:
     - Dentro de una etiqueta **_header_** agrega el siguiente contenido:
       - Una imagen con una foto tuya (foto real, no _avatar_, no ilustración, la imagen tiene que estar en la carpeta **_img_**).
       - Un encabezado 1 con tu nombre.
@@ -386,7 +387,7 @@ En la tarea sólo agrega el enlace de tu proyecto de _CodeSandbox_.
           - En la columna 2, pon el nombre del grupo o intérprete.
           - En la columna 3, pon un enlace que abrá en una nueva pestaña el video en _YouTube_ de la canción.
       4.  Agrega un mapa de _google_ de un lugar que te guste mucho, antes del mapa pon un encabezado 2 con el nombre del lugar y un párrafo donde expliques brevemente por que te gusta ese lugar.
-4.  Crea tu hoja de estilos y haz lo siguiente:
+3.  Crea tu hoja de estilos y haz lo siguiente:
     - Crea 3 variables:
       1.  Una de color obscuro.
       2.  Una de color claro.
@@ -415,6 +416,8 @@ Crea un **_CodeSandbox_** de tipo **_static_** y ponle el nombre **"Artículo-We
 
 La temática de tu artículo es libre. Se evaluará la redacción y ortografía del artículo. Deberás organizar tus archivos con la nomenclatura y estructura vistas en clase.
 
+Este proyecto vale el **10%** de tu calificación final.
+
 La ponderación de este artículo será:
 
 - 50% Escritura de código _HTML_.
@@ -441,5 +444,7 @@ El artículo deberá contar con los siguientes requisitos:
   - _Favicon_.
   - Enlace de la tipografía de _Google Fonts_.
   - Enlace de tu hoja de estilos.
+
+En la tarea sólo agrega el enlace de tu proyecto de CodeSandbox.
 
 ---
