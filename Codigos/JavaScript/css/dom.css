@@ -1,0 +1,78 @@
+/* 
+4 tipos de selectores básicos en CSS
+  1) etiqueta -> <p>
+  2) identificador -> #titulo
+  3) clases -> .text-center
+  4) atributo -> [atributo="valor"]
+*/
+
+p {
+  color: red;
+}
+
+input[type="search"] {
+  background-color: skyblue;
+}
+
+input[type="submit"] {
+  background-color: orange;
+}
+
+#titulo {
+  color: orange;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.bg-palegreen {
+  background-color: palegreen;
+}
+
+.bg-skyblue {
+  background-color: skyblue;
+}
+
+.fs-8 {
+  font-size: 8px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.online,
+.offline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #1b5e20;
+  color: #fff;
+}
+
+.offline {
+  background-color: #b71c1c;
+}

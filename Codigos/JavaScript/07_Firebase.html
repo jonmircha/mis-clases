@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1 class="sticky-title"><i>Firebase</i></h1>
+    <section class="full-screen">
+      <h2 id="message"></h2>
+      <h2><i>CRUD Firebase Realtime Database</i></h2>
+      <form id="form-cities">
+        <input type="text" id="country" placeholder="País" required />
+        <input type="text" id="city" placeholder="Ciudad" required />
+        <input type="submit" value="Salvar" />
+        <input type="hidden" id="key" />
+      </form>
+      <table id="table-cities">
+        <thead>
+          <tr>
+            <th>key</th>
+            <th>País</th>
+            <th>Ciudad</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <template id="template-city">
+        <tr id="" class="key-id">
+          <th class="key">key</th>
+          <td class="country">País</td>
+          <td class="city">Ciudad</td>
+          <td><button class="edit">Editar</button></td>
+          <td><button class="delete">Eliminar</button></td>
+        </tr>
+      </template>
+    </section>
+    <section class="full-screen">
+      <h2>Autenticación <i>Firebase</i> con <i>Email</i></h2>
+      <h3>Registrarse</h3>
+      <form id="form-signin">
+        <input type="text" name="nombre" placeholder="nombre" required />
+        <input type="email" name="email" placeholder="email" required />
+        <input type="password" name="pass" placeholder="contraseña" required />
+        <input type="submit" value="Crear Cuenta" />
+      </form>
+      <h3>Iniciar Sesión</h3>
+      <form id="form-login">
+        <input type="email" name="email" placeholder="email" required />
+        <input type="password" name="pass" placeholder="contraseña" required />
+        <input type="submit" value="Ingresar" />
+      </form>
+      <article id="app-auth-email"></article>
+    </section>
+    <section class="full-screen">
+      <h2>Autenticación <i>Firebase</i> con <i>GitHub</i></h2>
+      <button id="github-login">Ingresa con <i>GitHub</i></button>
+      <article id="app-auth-github"></article>
+    </section>
+    <section class="full-screen">
+      <h2>Autenticación <i>Firebase</i> con <i>Google</i></h2>
+      <button id="google-login">Ingresa con <i>Google</i></button>
+      <article id="app-auth-google"></article>
+    </section>
+    <section class="full-screen flex-column-center">
+      <h2>Almacenamiento <i>Firebase</i></h2>
+      <input type="file" id="uploader" multiple />
+      <progress id="progress-bar" value="0" max="100"></progress>
+      <span id="progress-advance"></span>
+      <section id="app-storage"></section>
+    </section>
+    <script src="js/firebase.js" type="module"></script>
+  </body>
+</html>

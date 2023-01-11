@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+  </head>
+  <body>
+    <h1 class="sticky-title">Formularios</h1>
+    <section class="full-screen">
+      <h2><i>Responsive Tester</i></h2>
+      <form id="responsive-form">
+        <input name="url" type="url" placeholder="URL" required />
+        <br />
+        <input name="width" type="text" placeholder="Ancho" required />
+        <br />
+        <input name="height" type="text" placeholder="Alto" required />
+        <br />
+        <input name="test" type="submit" value="Probar" />
+        <input name="close" type="button" value="Cerrar" />
+      </form>
+    </section>
+    <section class="full-screen">
+      <h2>Filtros de Búsqueda</h2>
+      <input type="search" placeholder="Buscar..." class="card-filter" />
+      <div class="cards">
+        <article class="card">
+          <img src="https://placeimg.com/200/200/nature" alt="Nature" />
+          <h4>Nature</h4>
+        </article>
+        <article class="card">
+          <img src="https://placeimg.com/200/200/any" alt="Any" />
+          <h4>Any</h4>
+        </article>
+        <article class="card">
+          <img src="https://placeimg.com/200/200/tech" alt="Tech" />
+          <h4>Tech</h4>
+        </article>
+        <article class="card">
+          <img src="https://placeimg.com/200/200/animals" alt="Animals" />
+          <h4>Animals</h4>
+        </article>
+        <article class="card">
+          <img src="https://placeimg.com/200/200/people" alt="People" />
+          <h4>People</h4>
+        </article>
+        <article class="card">
+          <img src="https://placeimg.com/200/200/arch" alt="Architecture" />
+          <h4>Architecture</h4>
+        </article>
+      </div>
+    </section>
+    <section class="full-screen">
+      <h2>Validaciones de Formulario</h2>
+      <form
+        class="contact-form"
+        action="https://formsubmit.co/your@email.com"
+        method="POST"
+        target="_blank"
+      >
+        <div class="form-data">
+          <label class="form-label" for="name">Nombre:</label>
+          <input
+            type="text"
+            class="form-control"
+            name="name"
+            id="name"
+            placeholder="Tu nombre"
+            title="Nombre sólo acepta letras y espacios en blanco"
+            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+            required
+          />
+        </div>
+        <div class="form-data">
+          <label class="form-label" for="email">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            id="email"
+            placeholder="tu.email@ejemplo.com"
+            title="Email incorrecto"
+            pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+            required
+          />
+        </div>
+        <div class="form-data">
+          <label class="form-label" for="subject">Asunto:</label>
+          <input
+            type="text"
+            class="form-control"
+            name="subject"
+            id="subject"
+            placeholder="Asunto a tratar"
+            title="El Asunto es requerido"
+            required
+          />
+        </div>
+        <div class="form-data">
+          <label class="form-label" for="comments">Comentarios:</label>
+          <textarea
+            class="form-control"
+            name="comments"
+            id="comments"
+            rows="5"
+            placeholder="Tus comentarios"
+            title="Tu comentario no debe exceder los 255 caracteres"
+            data-pattern="^.{1,255}$"
+            required
+          ></textarea>
+        </div>
+        <div class="form-data">
+          <span class="loader none"></span>
+          <aside class="form-response none">
+            <p>Los datos han sido enviados</p>
+          </aside>
+        </div>
+        <div class="form-data">
+          <input class="form-btn" type="submit" value="Enviar" />
+        </div>
+      </form>
+    </section>
+    <script src="js/forms.js" type="module"></script>
+  </body>
+</html>
