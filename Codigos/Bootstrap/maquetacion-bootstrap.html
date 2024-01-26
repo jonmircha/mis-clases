@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maquetando con Bootstrap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        font-family: "Raleway", sans-serif;
+      }
+
+      .font-roboto {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-xl bg-dark sticky-top"
+      data-bs-theme="dark"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <svg
+            aria-label="Bitso logo"
+            xmlns="http://www.w3.org/2000/svg"
+            class="sc-6289fa14-0 ksGLgU global-nav__header__logo-link__image"
+            role="img"
+            height="28px"
+            width="102px"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M16.3601 20.3343C16.3601 20.0048 16.086 19.742 15.7591 19.7588C15.2132 19.7871 14.4316 19.8092 13.8996 19.8092C10.7203 19.8092 8.14291 17.2167 8.14291 14.0184V0.207603C8.14291 0.0928027 8.05043 9.15527e-05 7.9363 9.15527e-05H0.12774C0.0572203 9.15527e-05 0 0.057336 0 0.128269V14.0184C0.0102069 21.7418 6.23701 28.0001 13.9178 28.0001C14.6914 28.0001 15.4489 27.9329 16.1878 27.8103C16.2874 27.7941 16.3601 27.7061 16.3601 27.6047V20.3343Z"
+              fill="currentColor"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M13.9187 9.15527e-05C13.1358 9.15527e-05 12.3697 0.0688471 11.6224 0.194847C11.5229 0.211958 11.4505 0.299692 11.4505 0.401425V7.68889C11.4505 8.01649 11.7189 8.3136 12.0394 8.28156C12.3595 8.24983 13.9001 8.22805 13.9001 8.22805C17.0797 8.22805 19.6571 10.8205 19.6571 14.0184H19.6673V26.6396C19.6673 26.6906 19.7208 26.7248 19.7666 26.7034C24.531 24.4808 27.8371 19.6306 27.8371 14.0001C27.8371 6.26805 21.6057 9.15527e-05 13.9187 9.15527e-05Z"
+              fill="currentColor"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M94.1767 8.06551C89.0414 8.06551 86.774 11.5546 86.774 16.2804C86.774 20.9231 89.4782 23.7259 93.7115 23.7259C98.8468 23.7259 101.087 20.2916 101.087 15.6212C101.087 10.9501 98.4376 8.06551 94.1767 8.06551ZM95.8849 19.7424C95.3111 20.1269 94.6839 20.3466 93.8089 20.3466C92.0882 20.3466 91.0505 18.8632 91.0505 16.1982C91.0505 14.7139 91.3505 13.3954 91.8429 12.7088C92.4164 12.2689 93.0715 12.0492 93.9187 12.0492C95.7485 12.0492 96.6495 13.5603 96.6495 15.758C96.6495 17.4069 96.3764 18.8632 95.8849 19.7424ZM79.7861 14.4399C77.5455 14.055 77.0271 13.7803 77.0271 13.0931C77.0271 12.7636 77.1369 12.4615 77.2999 12.2689C77.8737 12.0767 78.7474 11.9668 79.649 11.9668C81.4247 11.9668 83.0086 12.2416 84.3198 12.6538V9.08223C83.3093 8.56018 81.6431 8.06551 79.3215 8.06551C75.3881 8.06551 72.9298 9.93374 72.9298 13.1208C72.9298 16.1706 74.7321 17.1045 78.0373 17.7087C80.4684 18.176 80.9868 18.423 80.9868 19.1653C80.9868 19.4951 80.9051 19.7424 80.769 19.9073C80.1684 20.127 79.3215 20.2642 78.0927 20.2642C76.4531 20.2642 74.5141 19.9073 73.3397 19.4951V22.9845C74.5679 23.4786 76.5078 23.7259 78.2287 23.7259C82.408 23.7259 85.1116 22.4077 85.1116 19.0278C85.1116 16.1429 83.3365 15.0988 79.7861 14.4399ZM48.0516 13.7252C49.4443 12.9008 50.6463 11.5546 50.6463 9.63164C50.6463 6.36186 48.1332 4.63115 42.8888 4.63115H35.3502V23.4515H44.1179C48.7886 23.4515 51.1653 21.6654 51.1653 18.1212C51.1653 15.758 49.7991 14.4399 48.0516 13.7252ZM39.9391 8.23024C40.6764 8.20255 41.5777 8.17518 42.6157 8.17518C45.0196 8.17518 46.0848 8.88949 46.0848 10.4556C46.0848 11.3348 45.757 11.9667 44.9376 12.5438C44.3091 12.681 43.5718 12.7634 42.6977 12.7634C41.66 12.7634 40.6764 12.7361 39.9391 12.7087V8.23024ZM45.7845 20.1543C45.1832 20.3195 44.1727 20.374 43.3259 20.374C41.9328 20.374 40.7581 20.3466 39.9391 20.3195V15.9509H43.1892C45.5386 15.9509 46.5219 16.6375 46.5219 18.2037C46.5219 18.9731 46.2484 19.6046 45.7845 20.1543ZM54.2169 23.4513H58.6414V8.34006H54.2169V23.4513ZM66.796 4.60381L62.5611 4.93358V19.193C62.5611 21.9949 63.8453 23.6989 67.0682 23.6989C68.4341 23.6989 69.5268 23.4515 70.4559 23.0393V19.5499C69.554 19.8797 68.7622 20.0442 67.9157 20.0442C67.1777 20.0442 66.796 19.632 66.796 18.9454V11.857H70.3737V8.34025H66.796V4.60381ZM58.641 5.7577V1.99357L54.2169 2.32304V5.7577H58.641Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#how-to-start">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link 3</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <section class="row">
+        <article class="border col-12 col-lg-6">
+          <h2 class="font-roboto">Your safe, easy, borderless account</h2>
+        </article>
+        <article class="border col-12 col-lg-6">
+          <img src="https://picsum.photos/300/600" alt="" class="img-fluid" />
+        </article>
+      </section>
+    </div>
+    <div class="container">
+      <section class="row">
+        <article class="border col-12 order-md-first">
+          <h2 class="text-center">Explore prices and charts</h2>
+        </article>
+        <article class="border col-12 col-md-3 offset-md-6 order-md-1">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </article>
+        <article class="border col-12 col-md-3">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">Left</button>
+            <button type="button" class="btn btn-primary">Middle</button>
+            <button type="button" class="btn btn-primary">Right</button>
+          </div>
+        </article>
+        <article class="border col-12 order-md-last">
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody class="table-group-divider">
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+    </div>
+    <div class="container">
+      <section class="row">
+        <article class="border col-12">
+          <h2 class="text-center">How we simplify your life</h2>
+        </article>
+      </section>
+      <!-- section.row*3>article.col-12.col-lg-6*2 -->
+      <section class="row">
+        <article class="col-12 col-lg-6">
+          <h2>Invest, trade and send cryptos</h2>
+        </article>
+        <article class="col-12 col-lg-6">
+          <img
+            class="img-fluid"
+            src="https://bitso.com/_next/image.jpg?url=%2F_next%2Fstatic%2Fmedia%2Fconsumer-1-br.53ea4ed6.png&w=640&q=100"
+            alt=""
+          />
+        </article>
+      </section>
+      <section class="row">
+        <article class="col-12 col-lg-6 order-lg-1">
+          <h2>Buying low and selling high just got easier</h2>
+        </article>
+        <article class="col-12 col-lg-6">
+          <img
+            class="img-fluid"
+            src="https://bitso.com/_next/image.jpg?url=%2F_next%2Fstatic%2Fmedia%2Fconsumer-2-us.55294aab.png&w=640&q=100"
+            alt=""
+          />
+        </article>
+      </section>
+      <section class="row">
+        <article class="col-12 col-lg-6">
+          <h2>Buy your favorite crypto automatically</h2>
+        </article>
+        <article class="col-12 col-lg-6">
+          <img
+            class="img-fluid"
+            src="https://bitso.com/_next/image.jpg?url=%2F_next%2Fstatic%2Fmedia%2Fconsumer-3-br.5b6a243a.png&w=640&q=100"
+            alt=""
+          />
+        </article>
+      </section>
+    </div>
+    <div id="how-to-start" class="container">
+      <section class="row">
+        <article class="border col-12">
+          <h2>How to start</h2>
+        </article>
+        <article class="border col-12 col-md-6 col-lg-4">
+          <h6>Step 1</h6>
+          <h3>Open your account</h3>
+          <img
+            src="https://bitso.com/_next/image.jpg?url=%2F_next%2Fstatic%2Fmedia%2Fsteps-first-us.56fb7411.png&w=384&q=100"
+            alt=""
+            class="img-fluid"
+          />
+        </article>
+        <article class="border col-12 col-md-6 col-lg-4">
+          <h6>Step 2</h6>
+          <h3>Make a deposit</h3>
+          <img
+            src="https://bitso.com/_next/image.jpg?url=%2F_next%2Fstatic%2Fmedia%2Fsteps-second-us.f096d579.png&w=384&q=100"
+            alt=""
+            class="img-fluid"
+          />
+        </article>
+        <article class="border col-12 col-md-6 col-lg-4">
+          <h6>Step 3</h6>
+          <h3>Start Investing</h3>
+          <img
+            src="https://bitso.com/_next/image.jpg?url=%2F_next%2Fstatic%2Fmedia%2Fsteps-third-us.5042af35.png&w=384&q=100"
+            alt=""
+            class="img-fluid"
+          />
+        </article>
+        <article class="border col-12 col-md-6 col-lg-12">
+          <h6>JOIN US</h6>
+          <h3>See how easy it is at Bitso?</h3>
+          <img
+            src="https://bitso.com/_next/image.jpg?url=%2F_next%2Fstatic%2Fmedia%2Fsteps-footer-us.e47110f1.png&w=1920&q=100"
+            alt=""
+            class="img-fluid"
+          />
+        </article>
+      </section>
+    </div>
+    <h2 class="my-5 text-center">
+      Ejemplo del sitio de https://www.sofiasalud.com/
+    </h2>
+    <div class="container">
+      <section class="row">
+        <article class="border col-12 col-lg-6">
+          <section class="row">
+            <article class="border col-12">
+              <h3>Seguros médicos, pero diferentes</h3>
+              <p>Cobertura completa, sin deducible y todo desde una app</p>
+            </article>
+            <article class="border col-8 col-lg-7">
+              <h2>Para empresas</h2>
+            </article>
+            <article class="border col-4 col-lg-5">
+              <h2>Para personas</h2>
+            </article>
+          </section>
+        </article>
+        <article class="border col-12 col-lg-6">
+          <img
+            src="https://assets-global.website-files.com/630e3b76fb8990e10c16240e/652ea7f67789b432c4a720c6_hero-image-2x-p-1080.png"
+            alt=""
+            class="img-fluid"
+          />
+        </article>
+      </section>
+    </div>
+    <h2 class="my-5">Otro ejemplo más https://platacard.mx/es/</h2>
+    <div class="container">
+      <section class="row">
+        <article class="border col-12 col-md-12 col-lg-6">
+          <img
+            src="https://platacard.mx/static/origination-client-web/card/main-bunner/card-banner-lg-newyear.webp"
+            alt="Plata Card"
+            class="img-fluid"
+          />
+        </article>
+        <article class="border col-12 col-md-12 col-lg-6">
+          <h2>Obtén tu Plata Card sin anualidades</h2>
+        </article>
+        <article class="border col-12 col-md-6 col-lg-3">
+          <img
+            src="https://platacard.mx/static/origination-client-web/card/main-bunner/benefit-delivery-180.webp"
+            alt=""
+            class="img-fluid"
+          />
+          <p>Entrega de tarjeta en 24 horas</p>
+        </article>
+        <article class="border col-12 col-md-6 col-lg-3">
+          <img
+            src="https://platacard.mx/static/origination-client-web/card/main-bunner/benefit-delivery-180.webp"
+            alt=""
+            class="img-fluid"
+          />
+          <p>Entrega de tarjeta en 24 horas</p>
+        </article>
+        <article class="border col-12 col-md-6 col-lg-3">
+          <img
+            src="https://platacard.mx/static/origination-client-web/card/main-bunner/benefit-delivery-180.webp"
+            alt=""
+            class="img-fluid"
+          />
+          <p>Entrega de tarjeta en 24 horas</p>
+        </article>
+        <article class="border col-12 col-md-6 col-lg-3">
+          <img
+            src="https://platacard.mx/static/origination-client-web/card/main-bunner/benefit-delivery-180.webp"
+            alt=""
+            class="img-fluid"
+          />
+          <p>Entrega de tarjeta en 24 horas</p>
+        </article>
+      </section>
+    </div>
+    <div class="ratio ratio-16x9">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/ng8ur8KNrpU?si=_zLCpnLWHI298dSM"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

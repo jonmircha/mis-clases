@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es" data-dark>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practicando con el DOM</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/hamburgers@1.2.1/dist/hamburgers.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dom-practicas.css" />
+  </head>
+  <body>
+    <h1 class="sticky-title">Practicando con el DOM</h1>
+    <section class="full-screen">
+      <h2>Panel de Navegación</h2>
+      <button class="panel-btn hamburger hamburger--vortex" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <aside id="panel" class="panel">
+        <div>
+          <p>Este es un panel de navegación</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+            architecto sequi mollitia doloremque. Veritatis, nisi. Laborum velit
+            nulla perspiciatis quae harum dignissimos, totam dolore, accusamus
+            debitis reiciendis tempore nostrum aliquam?
+          </p>
+        </div>
+      </aside>
+    </section>
+    <section class="full-screen">
+      <h2>Botón de <i>Scroll</i></h2>
+      <button class="scroll-top-btn hidden">&#11014;</button>
+    </section>
+    <section class="full-screen">
+      <h2>Responsive Media</h2>
+      <div id="youtube"></div>
+      <div id="gmaps"></div>
+    </section>
+    <section class="full-screen">
+      <h2>Tema Oscuro / Claro</h2>
+      <button class="dark-theme-btn">🌙</button>
+    </section>
+    <section class="full-screen">
+      <h2>Reloj Digital</h2>
+      <div id="clock"></div>
+      <button id="play-clock">Iniciar Reloj</button>
+      <button id="stop-clock">Detener Reloj</button>
+    </section>
+    <section class="full-screen">
+      <h2>Cuenta Regresiva</h2>
+      <div id="countdown"></div>
+    </section>
+    <section class="full-screen">
+      <h2>Sorteo</h2>
+      <ol id="players">
+        <li>Vanilla JS</li>
+        <li>React</li>
+        <li>Angular</li>
+        <li>Vue</li>
+        <li>Svelte</li>
+        <li>Lit Element</li>
+      </ol>
+      <h3 id="winner"></h3>
+      <button id="btn-winner">Obtener Ganador</button>
+    </section>
+    <section class="full-screen">
+      <h2>Hacer Equipos</h2>
+      <h3>Equipo 1</h3>
+      <ol id="team-1">
+        <li>React</li>
+        <li>Angular</li>
+        <li>Vue</li>
+        <li>Svelte</li>
+        <li>Lit Element</li>
+      </ol>
+      <h3>Equipo 2</h3>
+      <ol id="team-2">
+        <li>Python</li>
+        <li>Node</li>
+        <li>PHP</li>
+        <li>Ruby</li>
+        <li>Java</li>
+      </ol>
+      <button id="btn-sort">Combinar</button>
+      <h3>Nuevos Equipos</h3>
+      <ol id="teams"></ol>
+    </section>
+    <section class="full-screen">
+      <h2>Sorteos <i>YouTube</i></h2>
+    </section>
+    <script src="js/dom-practicas.js" type="module"></script>
+  </body>
+</html>

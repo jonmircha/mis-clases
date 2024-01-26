@@ -1,0 +1,15 @@
+img {
+  max-width: 100%;
+}
+
+.cards,
+.pokemons,
+.links,
+.shows,
+.wp-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2vh;
+  margin: 1rem auto;
+  text-align: center;
+}

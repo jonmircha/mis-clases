@@ -1,0 +1,19 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.bg-sofia {
+  background-color: #4a25aa;
+}
+
+.bg-sofia-light {
+  background-color: #e3d3fa;
+}
+
+.text-sofia {
+  color: #4a25aa;
+}
+
+.text-sofia-light {
+  color: #e3d3fa;
+}
