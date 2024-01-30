@@ -5,7 +5,7 @@ Diferentes enlaces, conceptos y notas que uso en mis clases, estan ordenados de 
 - [Enlaces](#enlaces).
   - [_APIs_](#apis).
   - [_Crypto_](#crypto).
-  - [Generadores _CSS_](#generadores-css).
+  - [_CSS_](#css).
   - [Herramientas varias](#herramientas-varias).
   - [Hospedajes](#hospedajes).
   - [Iconos](#iconos).
@@ -14,9 +14,9 @@ Diferentes enlaces, conceptos y notas que uso en mis clases, estan ordenados de 
   - [Sitios _CV_ y _One Page_](#sitios-cv-y-one-page).
   - [Sitios _Landing Page_](#sitios-landing-page).
   - [Sitios _Multi Page_](#sitios-multi-page).
+  - [Sitios para Maquetar](#sitios-para-maquetar).
   - [Sitios Premiados](#sitios-premiados).
   - [Sitios Referencia](#sitios-referencia).
-  - [Videojuegos](#videojuegos).
   - [Videos](#videos).
 - [Higiene Digital](#higiene-digital).
 - [Inteligencia Artificial](#inteligencia-artificial).
@@ -36,40 +36,40 @@ Diferentes enlaces, conceptos y notas que uso en mis clases, estan ordenados de 
 
 - https://publicapi.dev/
 - https://github.com/public-apis/public-apis
-- https://api.sampleapis.com/
-- https://api.whatsapp.com/send?phone=19546632326&text=Hola
-- https://www.theaudiodb.com/
 - https://thedogapi.com/
+- https://www.theaudiodb.com/
+- https://api.whatsapp.com/send?phone=19546632326&text=Hola
 
 [🔼 Regresar](#notas)
 
 ### _Crypto_
 
+- [_Bitcoin Rainbow_](https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/)
 - [Documental _Cryptopía_](https://www.youtube.com/watch?v=P6vYyqHG54Y)
 - [Glosario _Web3_](https://blog.bitso.com/es-mx/criptomonedas-mx/glosario-web3)
 
 [🔼 Regresar](#notas)
 
-### Generadores _CSS_
+### _CSS_
 
+- https://watercss.kognise.dev/
 - https://modernfontstacks.com/
-- http://generators.shecodes.io/
-- https://www.designgradients.com/
 - https://cssloaders.github.io/
+- https://www.joshwcomeau.com/gradient-generator/
 - https://bennettfeely.com/clippy/
-- https://www.joshwcomeau.com/shadow-palette/
+- https://uiverse.io/
+- https://uicolors.app/create
 
 [🔼 Regresar](#notas)
 
 ### Herramientas varias
 
-- https://uiverse.io/
-- https://github.com/git-school/visualizing-git
-- https://www.diagrams.net/
-- https://vanna.ai/
-- https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/
+- https://www.drawio.com/
 - https://www.the-qrcode-generator.com/
 - https://tinywow.com/
+- https://www.ilovepdf.com/es
+- https://carbon.now.sh/+
+- https://ray.so/
 
 [🔼 Regresar](#notas)
 
@@ -91,6 +91,7 @@ Diferentes enlaces, conceptos y notas que uso en mis clases, estan ordenados de 
 ### Iconos
 
 - https://boxicons.com/
+- https://icons.getbootstrap.com/
 - https://www.svgrepo.com/
 - https://svgporn.com/
 - https://worldvectorlogo.com/es/
@@ -101,13 +102,8 @@ Diferentes enlaces, conceptos y notas que uso en mis clases, estan ordenados de 
 
 - https://tinypng.com/
 - https://www.iloveimg.com/
-- https://www.remove.bg/es
-- https://imgupscaler.com/
 - https://www.appypie.com/design/image-color-picker/
-- https://www.watermarkremover.io/es
-- https://www.erase.bg/es
-- https://www.upscale.media/es
-- https://www.shrink.media/es
+- https://picsum.photos/
 
 [🔼 Regresar](#notas)
 
@@ -125,28 +121,35 @@ Diferentes enlaces, conceptos y notas que uso en mis clases, estan ordenados de 
 
 ### Sitios _CV_ y _One Page_
 
-- http://rileysainz.com/
+- https://weaintplastic.com/
+- https://www.gregives.co.uk/
 - https://tonsky.me/
 - https://john-doe.neocities.org/ (#)
+- http://rileysainz.com/
 
 [🔼 Regresar](#notas)
 
 ### Sitios _Landing Page_
 
-- https://en99palabras.myshopify.com/
-- https://shop.app/
+- https://www.apple.com/iphone/
 - https://bearsandguts.com/
-- https://essentia.one/
+- https://jonmircha.com/taller-minimalista
 
 [🔼 Regresar](#notas)
 
 ### Sitios _Multi Page_
 
+- https://www.adhamdannaway.com/
 - https://sofiasalud.com/
 - https://bitso.com/
-- https://flat.mx/
 - https://gbm.plus/
-- https://uxcel.com/
+
+[🔼 Regresar](#notas)
+
+### Sitios para Maquetar
+
+- https://platacard.mx/es/
+- https://www.zenfi.mx/
 - https://lacasadetono.mx/menu/
 
 [🔼 Regresar](#notas)
@@ -162,23 +165,11 @@ Diferentes enlaces, conceptos y notas que uso en mis clases, estan ordenados de 
 
 ### Sitios Referencia
 
-- https://devdocs.io/
 - https://roadmap.sh/
+- https://devdocs.io/
 - https://uxengineer.com/
 - https://briefs.video/
 - https://datareportal.com/
-
-[🔼 Regresar](#notas)
-
-### Videojuegos
-
-- https://replit.com/@introvertices/SpicyBoyTimeToShine
-- https://replit.com/@quanuhs/Franks-Adventure
-- https://replit.com/@isaacpante/The-Spicy-Interview
-- https://replit.com/@zekehernandez/Deliverwing
-- https://replit.com/@rbSparky/Go-Chef-A-Kajam-Game
-- https://replit.com/@CoderGautamYT/spicywario
-- https://replit.com/@torcado/SSSPICY
 
 [🔼 Regresar](#notas)
 
@@ -266,12 +257,11 @@ La inteligencia artificial es una rama de la informática que busca desarrollar 
 
 La inteligencia artificial se basa en el uso de algoritmos y modelos matemáticos que permiten a los sistemas aprender de los datos, y su aplicación abarca una amplia gama de campos, desde la automatización de procesos industriales hasta la asistencia en el diagnóstico médico o la creación de sistemas de recomendación en el comercio electrónico.
 
-### Empresa _IA_
+### Empresas _IA_
 
 - https://openai.com/
 - https://stability.ai/
-- https://www.deepmind.com/
-- https://writer.com/
+- https://deepmind.google/
 
 ### Comunidades _IA_
 
@@ -279,34 +269,71 @@ La inteligencia artificial se basa en el uso de algoritmos y modelos matemático
 
 ### Herramientas _IA_
 
-- https://evolupedia.com/
-- https://experiments.withgoogle.com/
+- https://evolupedia.com/herramientas-ia/
+
+#### Texto
+
 - https://chat.openai.com/chat
-- https://openai.com/dall-e-2/
-- https://stablediffusionweb.com/
+- https://www.perplexity.ai/
+- https://writer.com/ai-content-detector/
+- https://www.copy.ai/
+- https://rytr.me/
+- https://headlime.com/
+
+#### Imagen
+
+- https://firefly.adobe.com/
+- https://lexica.art/
+- https://www.midjourneyai.ai/es/free-trial
+- https://ideogram.ai/login
 - https://leonardo.ai/
+- https://clipdrop.co/stable-diffusion-turbo
+- https://stablediffusionweb.com/
+- https://godinabox.co/
 - https://creator.nightcafe.studio/
 - https://this-person-does-not-exist.com/es
 - https://thisxdoesnotexist.com/
-- https://lexica.art/
-- https://godinabox.co/
-- https://apps.apple.com/us/app/historical-figures-chat/id6444197650
-- https://beta.character.ai/
-- https://magicstudio.com/magiceraser
-- https://bigjpg.com/
 - https://pfpmaker.com/
-- https://generated.photos/
-- https://www.myheritage.es/
-- https://www.synthesia.io/
-- https://brandmark.io/
+- https://magicstudio.com/es/
+
+#### Identidad de Marca
+
 - https://namelix.com/
-- https://headlines.sharethrough.com/
-- https://rytr.me/
-- https://headlime.com/
-- https://www.copy.ai/
-- https://writer.com/ai-content-detector/
-- https://beta.tome.app/
-- https://www.perplexity.ai/
+- https://brandmark.io/
+- https://brandmark.io/tools/
+- https://app.brandmark.io/v3/
+
+#### Audio
+
+- https://elevenlabs.io/
+- https://www.stableaudio.com/
+
+#### Video
+
+- https://www.synthesia.io/
+
+#### Presentaciones
+
+- https://tome.app/
+
+#### Pruebas en _FireFly_
+
+- [Puedes elaborar un poster con los logotipos de tecnologías web como html, css, jasvascript, react, php, node.js, mysql, mongodb, bootstrap, entre algunas otras](https://firefly.adobe.com/generate/images?prompt=Puedes+elaborar+un+poster+con+los+logotipos+de+tecnolog%C3%ADas+web+como+html%2C+css%2C+jasvascript%2C+react%2C+php%2C+node.js%2C+mysql%2C+mongodb%2C+bootstrap%2C+entre+algunas+otras&seed=33473&seed=40636&seed=82287&seed=59735&aspectRatio=square&dl=es-MX&modelInputVersion=v2&creativity=6&useAutoKeywords=false).
+- [Puedes genewrar un poster que haga referencia al concepto de desarrollo web](https://firefly.adobe.com/generate/images?prompt=Puedes+genewrar+un+poster+que+haga+referencia+al+concepto+de+desarrollo+web&style=photo&seed=33473&seed=40636&seed=82287&seed=59735&aspectRatio=widescreen&dl=es-MX&modelInputVersion=v2&exif=%7B%22mode%22%3A%22auto%22%7D&browserId=481f4b&creativity=6&useAutoKeywords=false).
+- [Puedes generar un poster que haga referencia al concepto de desarrollo web que incluya una persona escribiendo código en un laptop](https://firefly.adobe.com/generate/images?prompt=Puedes+generar+un+poster+que+haga+referencia+al+concepto+de+desarrollo+web+que+incluya+una+persona+escribiendo+c%C3%B3digo+en+un+laptop&style=photo&seed=33473&seed=40636&seed=82287&seed=59735&aspectRatio=widescreen&dl=es-MX&modelInputVersion=v2&exif=%7B%22mode%22%3A%22auto%22%7D&browserId=481f4b&creativity=6&useAutoKeywords=false).
+- [Puedes generar un poster que haga referencia al concepto de desarrollo web que incluya una persona escribiendo código en un laptop, puedes agregar código rea a la imagen en vez de garabatos sin sentido](https://firefly.adobe.com/generate/images?prompt=Puedes+generar+un+poster+que+haga+referencia+al+concepto+de+desarrollo+web+que+incluya+una+persona+escribiendo+c%C3%B3digo+en+un+laptop%2C+puedes+agregar+c%C3%B3digo+rea+a+la+imagen+en+vez+de+garabatos+sin+sentido&style=photo&seed=33473&seed=40636&seed=82287&seed=59735&aspectRatio=widescreen&dl=es-MX&modelInputVersion=v2&exif=%7B%22mode%22%3A%22auto%22%7D&browserId=481f4b&creativity=6&useAutoKeywords=false).
+- [Puedes generar un poster que haga referencia al concepto de desarrollo web que incluya una persona escribiendo código en español en un laptop, puedes agregar código rea a la imagen en vez de garabatos sin sentido](https://firefly.adobe.com/generate/images?prompt=Puedes+generar+un+poster+que+haga+referencia+al+concepto+de+desarrollo+web+que+incluya+una+persona+escribiendo+c%C3%B3digo+en+espa%C3%B1ol+en+un+laptop%2C+puedes+agregar+c%C3%B3digo+rea+a+la+imagen+en+vez+de+garabatos+sin+sentido&style=photo&seed=33473&seed=40636&seed=82287&seed=59735&aspectRatio=widescreen&dl=es-MX&modelInputVersion=v2&exif=%7B%22mode%22%3A%22auto%22%7D&browserId=481f4b&creativity=6&useAutoKeywords=false).
+- [Puedes generar un poster que haga referencia al concepto de desarrollo web que incluya una persona escribiendo código en español en un laptop, puedes agregar código rea a la imagen en vez de garabatos sin sentido](https://firefly.adobe.com/generate/images?prompt=Puedes+generar+un+poster+que+haga+referencia+al+concepto+de+desarrollo+web+que+incluya+una+persona+escribiendo+c%C3%B3digo+en+espa%C3%B1ol+en+un+laptop%2C+puedes+agregar+c%C3%B3digo+rea+a+la+imagen+en+vez+de+garabatos+sin+sentido&style=photo&style=shot_from_above&style=backlighting&style=cool_colors&seed=10185&seed=49052&seed=82287&seed=39489&aspectRatio=widescreen&dl=es-MX&modelInputVersion=v2&exif=%7B%22mode%22%3A%22auto%22%7D&browserId=481f4b&creativity=6&useAutoKeywords=false).
+- [Desarrollador Web](https://firefly.adobe.com/generate/images?prompt=Desarrollador+Web&styles=%7B%22mode%22%3A%22manual%22%2C%22value%22%3A%5B%5D%7D&seed=3812&seed=99817&seed=61397&seed=49447&aspectRatio=square&modelInputVersion=v2&guideStrength=50&creativity=6&promptType=user-written).
+- [Diseñador Web](https://firefly.adobe.com/generate/images?prompt=Dise%C3%B1ador+Web&styles=%7B%22mode%22%3A%22manual%22%2C%22value%22%3A%5B%5D%7D&seed=26529&seed=9346&seed=19307&seed=36515&aspectRatio=square&dl=es-MX&modelInputVersion=v2&guideStrength=50&browserId=481f4b&creativity=6&promptType=user-written).
+- [Diseñador Web](https://firefly.adobe.com/generate/images?prompt=Dise%C3%B1ador+Web&styles=%7B%22mode%22%3A%22manual%22%2C%22value%22%3A%5B%5D%7D&seed=94169&seed=40663&seed=18956&seed=82258&aspectRatio=square&dl=es-MX&modelInputVersion=v2&guideStrength=50&browserId=481f4b&creativity=6&promptType=user-written).
+- [Diseñador Web](https://firefly.adobe.com/generate/images?prompt=Dise%C3%B1ador+Web&styles=%7B%22mode%22%3A%22manual%22%2C%22value%22%3A%5B%5D%7D&seed=40612&seed=50609&seed=72929&seed=75280&aspectRatio=square&dl=es-MX&modelInputVersion=v2&guideStrength=50&browserId=481f4b&creativity=6&promptType=user-written).
+- [Desarrolladores web programando y diseñando una aplicación](https://firefly.adobe.com/generate/images?prompt=Desarrolladores+web+programando+y+dise%C3%B1ando+una+aplicaci%C3%B3n&styles=%7B%22mode%22%3A%22manual%22%2C%22value%22%3A%5B%5D%7D&seed=2020&seed=35143&seed=34510&seed=55587&aspectRatio=square&modelInputVersion=v2&guideStrength=50&creativity=6&promptType=user-written).
+- [Desarrollo Web Minimalista](https://firefly.adobe.com/generate/images?prompt=Desarrollo+Web+Minimalista&styles=%7B%22mode%22%3A%22manual%22%2C%22value%22%3A%5B%5D%7D&seed=38168&seed=89524&seed=13489&seed=28681&aspectRatio=square&modelInputVersion=v2&guideStrength=50&creativity=6&promptType=user-written).
+- [Puedes generarme una pleca de hojas de arbol o pasto que parezca un patrón repetitivo en formato png con transparencia alpha con el concepto de jardín digital de 1920px de anchura por 128px de altura](https://firefly.adobe.com/generate/images?prompt=Puedes+generarme+una+pleca+de+hojas+de+arbol+o+pasto+que+parezca+un+patr%C3%B3n+repetitivo+en+formato+png+con+transparencia+alpha+con+el+concepto+de+jard%C3%ADn+digital+de+1920px+de+anchura+por+128px+de+altura&seed=99674&seed=24441&seed=61696&seed=63289&aspectRatio=widescreen&dl=es-MX&modelInputVersion=v2&browserId=481f4b&creativity=6&useAutoKeywords=false).
+- [Puedes generarme una imagen que forme un patron repetitivo en horizontal, de pasto que simule un jardin digital, el inicio de la imagen debe coincidir con el final para que pueda colocarlo como fondo repetido en un documento html](https://firefly.adobe.com/generate/images?prompt=Puedes+generarme+una+imagen+que+forme+un+patron+repetitivo+en+horizontal%2C+de+pasto+que+simule+un+jardin+digital%2C+el+inicio+de+la+imagen+debe+coincidir+con+el+final+para+que+pueda+colocarlo+como+fondo+repetido+en+un+documento+html&seed=99674&seed=24441&seed=61696&seed=63289&aspectRatio=widescreen&dl=es-MX&modelInputVersion=v2&referenceImage=image-file-style-reference%3Af576e811&guideStrength=50&browserId=481f4b&creativity=6&useAutoKeywords=false).
+- [comunidades virtuales y medios sociales](https://firefly.adobe.com/generate/images?prompt=comunidades+virtuales+y+medios+sociales&styles=%7B%22mode%22%3A%22manual%22%2C%22value%22%3A%5B%5D%7D&seed=96178&seed=19021&seed=35597&seed=85679&aspectRatio=widescreen&dl=es-MX&modelInputVersion=v2&guideStrength=50&browserId=481f4b&creativity=6&promptType=user-written).
+- [Botella de Tequila de origen frances con temática de dinosaurios](https://firefly.adobe.com/generate/images?prompt=Botella+de+Tequila+de+origen+frances+con+tem%C3%A1tica+de+dinosaurios&styles=%7B%22mode%22%3A%22manual%22%2C%22value%22%3A%5B%22cool_colors%22%5D%7D&seed=90616&seed=34568&seed=22452&seed=3041&aspectRatio=widescreen&dl=es-MX&modelInputVersion=v2&referenceImage=%7B%22id%22%3A%22627ff2cf6ac873777a3d53fd7393079c054e9d5b94632b1e4de64449e22250ef%22%2C%22ref%22%3A%7B%22localBlobRef%22%3A%22627ff2cf6ac873777a3d53fd7393079c054e9d5b94632b1e4de64449e22250ef%22%2C%22mimeType%22%3A%22image%2Fjpeg%22%7D%2C%22type%22%3A%22image-file-style-reference%22%7D&guideStrength=50&browserId=481f4b&creativity=6&promptType=user-written).
 
 [🔼 Regresar](#notas)
 
