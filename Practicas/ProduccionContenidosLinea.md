@@ -25,7 +25,7 @@ Historia de la empresa:
 ### Proyecto 1 - Revisión 3: Sitio Web
 
 - Landing page del centenario del producto.
-  o 20 artículos de blog, la temática puede ser variada, por ejemplo: reseñas, críticas, noticias de la marca,
+- 20 artículos de blog, la temática puede ser variada, por ejemplo: reseñas, críticas, noticias de la marca,
   participación en eventos, apoyo de causas, fake news, en fin, usen su imaginación.
 
 ---
