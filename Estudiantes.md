@@ -9,6 +9,7 @@ Enlaces de los mejores proyectos de mis estudiantes.
 - [_Instagram_ con _WordPress_](#instagram-con-wordpress).
 - [_Instagram_](#instagram).
 - [Marcas de Ropa](#marcas-de-ropa).
+- [Menú Restaurante](#menú-restaurante)
 - [_NFTs_](#nfts).
 - [_No Code_](#no-code).
 - [_WordPress_](#wordpress).
@@ -20,14 +21,10 @@ Enlaces de los mejores proyectos de mis estudiantes.
 ## Artículos _Web_
 
 - https://codesandbox.io/s/articulo-anaperezjovic-2wxlcb
-- https://codesandbox.io/s/susy-diaz-proyecto-html-e05i5y
-- https://codesandbox.io/s/recursing-shockley-6p48qo
+- https://codesandbox.io/p/sandbox/recursing-shockley-6p48qo
 - https://codesandbox.io/s/proyecto-3-francisco-said-chacon-gonzalez-7cubge
-- https://codesandbox.io/s/articulo-lila-castillo-6fngh9
-- https://codesandbox.io/s/billowing-silence-5qbcto
 - https://codesandbox.io/s/fundamentos-html-m84or4
 - https://codesandbox.io/s/proyecto-final-nshxi0
--
 
 [🔼 Regresar](#estudiantes)
 
@@ -54,9 +51,9 @@ Enlaces de los mejores proyectos de mis estudiantes.
 
 ## _Ignites_
 
+- https://www.youtube.com/watch?v=RBsxhdk51xc
 - https://www.youtube.com/watch?v=HQAIr13x58s
 - https://www.youtube.com/watch?v=Y6pVJDXjGRY
-- https://www.youtube.com/watch?v=RBsxhdk51xc
 - https://www.youtube.com/watch?v=8KWcJX_tsfc
 - https://www.youtube.com/watch?v=xPvw9u8pwbY
 
@@ -95,10 +92,26 @@ Enlaces de los mejores proyectos de mis estudiantes.
 
 Proyectos digitales con marcas de ropa y temas sustentables o con responsabilidad social.
 
+- https://zarasingenero.wordpress.com/
 - https://ayguey22.wordpress.com/
 - https://forever21foreveryours.wordpress.com/
-- https://zarasingenero.wordpress.com/
 - https://guesssingenero.wordpress.com/2022/05/25/responsabilidad-social/
+
+[🔼 Regresar](#estudiantes)
+
+---
+
+## Menú Restaurante
+
+- _Carl's Jr._
+  - https://www.figma.com/file/Vxpt6oQh7gex7jZQPTCKWD/Men%C3%BA---CarlsJr
+  - https://codesandbox.io/p/sandbox/paola-sevilla-menu-codesandbox-xy7ty6
+- _Toki Doki_
+  - https://www.figma.com/file/JkyFPkVNMwEfZ3AVGKeMIW/Men%C3%BA---Toki-Doki
+  - https://codesandbox.io/p/sandbox/sushi-lopezjuarezmariananatalia-501-jvztss
+- _Wabi Sushi_
+  - https://www.figma.com/file/TrCQizPP18SLIBaM5eExqC/Men%C3%BA---Wabi-Sushi
+  - https://codesandbox.io/p/sandbox/menu-wabi-sushi-inicio-dykpsf
 
 [🔼 Regresar](#estudiantes)
 
@@ -112,10 +125,6 @@ Proyectos digitales con marcas de ropa y temas sustentables o con responsabilida
 - https://mintable.app/u/fridar16
 - https://mintable.app/u/saraele
 - https://mintable.app/u/camcamila
-- [https://mintable.app/u/re\_](https://mintable.app/u/re_)
-- [https://mintable.app/u/mariana_mms\_](https://mintable.app/u/mariana_mms_)
-- https://mintable.app/u/alex-aosg
-- https://mintable.app/u/mayo_os
 
 [🔼 Regresar](#estudiantes)
 
@@ -124,7 +133,6 @@ Proyectos digitales con marcas de ropa y temas sustentables o con responsabilida
 ## _No Code_
 
 - [_App_ tipo _Tinder_](https://lasallinder-bgh6.glideapp.io/dl/ddecb1).
-- [_App_ de contenido _Fit_](https://go.glideapps.com/template/MRwSKpSYaFy7nhqeHBcQ-template-published/dl/6471c6?privateTemplateToken=7Ebv4tiEpQhrL7ztwtWC&classId=b62add87-f49d-4254-aea1-645bf8457a8a&assignmentId=21dcd8ce-60cc-44d3-8c8f-8129ab3c58f6&submissionId=767c5f56-5125-fc95-7f7e-7ede4a84179d).
 - [_App_ tipo _Instagram_](https://previewer.adalo.com/143aa5f7-795c-46c1-8cf9-0b15cee81928).
 - [_App_ de Clima](https://aclimatate.glideapp.io/dl/74c4fe).
 - [_App_ Apartando espacios en La Salle](https://lasillistas-xzxw.glide.page/dl/6471c6)

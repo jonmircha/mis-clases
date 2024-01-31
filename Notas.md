@@ -68,7 +68,7 @@ Diferentes enlaces, conceptos y notas que uso en mis clases, estan ordenados de 
 - https://www.the-qrcode-generator.com/
 - https://tinywow.com/
 - https://www.ilovepdf.com/es
-- https://carbon.now.sh/+
+- https://carbon.now.sh/
 - https://ray.so/
 
 [🔼 Regresar](#notas)
