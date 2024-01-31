@@ -3,13 +3,14 @@
 Enlaces de los mejores proyectos de mis estudiantes.
 
 - [Artículos _Web_](#artículos-web).
+- [Menú Restaurante _Web_](#menú-restaurante-web).
+- [Periódico _Web_](#periódico-web).
 - [Educación Financiera](#educación-financiera).
 - [_IA_](#ia).
 - [_Ignites_](#ignites).
 - [_Instagram_ con _WordPress_](#instagram-con-wordpress).
 - [_Instagram_](#instagram).
 - [Marcas de Ropa](#marcas-de-ropa).
-- [Menú Restaurante](#menú-restaurante)
 - [_NFTs_](#nfts).
 - [_No Code_](#no-code).
 - [_WordPress_](#wordpress).
@@ -20,11 +21,42 @@ Enlaces de los mejores proyectos de mis estudiantes.
 
 ## Artículos _Web_
 
-- https://codesandbox.io/s/articulo-anaperezjovic-2wxlcb
+- https://codesandbox.io/p/sandbox/proyecto-3-m84or4
+- https://codesandbox.io/p/sandbox/articulo-anaperezjovic-2wxlcb
 - https://codesandbox.io/p/sandbox/recursing-shockley-6p48qo
-- https://codesandbox.io/s/proyecto-3-francisco-said-chacon-gonzalez-7cubge
-- https://codesandbox.io/s/fundamentos-html-m84or4
-- https://codesandbox.io/s/proyecto-final-nshxi0
+- https://codesandbox.io/p/sandbox/proyecto-3-francisco-said-chacon-gonzalez-7cubge
+
+[🔼 Regresar](#estudiantes)
+
+---
+
+## Menú Restaurante _Web_
+
+- Perez Jovic Ana
+  - https://www.figma.com/file/TrCQizPP18SLIBaM5eExqC/Men%C3%BA---Wabi-Sushi
+  - https://codesandbox.io/p/sandbox/menu-wabi-sushi-inicio-dykpsf
+- Sevilla Lopez Paola
+  - https://www.figma.com/file/Vxpt6oQh7gex7jZQPTCKWD/Men%C3%BA---CarlsJr
+  - https://codesandbox.io/p/sandbox/paola-sevilla-menu-codesandbox-xy7ty6
+- Lopez Juarez Mariana Natalia
+  - https://www.figma.com/file/JkyFPkVNMwEfZ3AVGKeMIW/Men%C3%BA---Toki-Doki
+  - https://codesandbox.io/p/sandbox/sushi-lopezjuarezmariananatalia-501-jvztss
+
+[🔼 Regresar](#estudiantes)
+
+---
+
+## Periódico _Web_
+
+- Perez Jovic Ana
+  - https://www.figma.com/file/dTzTDTBaQC9BtcpA8dKGAL/Peri%C3%B3dico---The-Main-Point
+  - https://codesandbox.io/p/sandbox/the-main-point-s35wq7
+- Miranda Roldán Ana Laura
+  - https://www.figma.com/file/I4aKYbA7AVPrTJQ6HLes7H/Peri%C3%B3dico---The-New-York-Times
+  - https://codesandbox.io/p/sandbox/ana-miranda-proyecto-2-4yvpxs
+- Echavarria Cabrera Jimena
+  - https://www.figma.com/file/t2v3o6zh1NKsBOu1Snf5ri/Peri%C3%B3dico---El-Pa%C3%ADs
+  - https://codesandbox.io/p/sandbox/el-pais-periodico-jfjzjv
 
 [🔼 Regresar](#estudiantes)
 
@@ -96,22 +128,6 @@ Proyectos digitales con marcas de ropa y temas sustentables o con responsabilida
 - https://ayguey22.wordpress.com/
 - https://forever21foreveryours.wordpress.com/
 - https://guesssingenero.wordpress.com/2022/05/25/responsabilidad-social/
-
-[🔼 Regresar](#estudiantes)
-
----
-
-## Menú Restaurante
-
-- _Carl's Jr._
-  - https://www.figma.com/file/Vxpt6oQh7gex7jZQPTCKWD/Men%C3%BA---CarlsJr
-  - https://codesandbox.io/p/sandbox/paola-sevilla-menu-codesandbox-xy7ty6
-- _Toki Doki_
-  - https://www.figma.com/file/JkyFPkVNMwEfZ3AVGKeMIW/Men%C3%BA---Toki-Doki
-  - https://codesandbox.io/p/sandbox/sushi-lopezjuarezmariananatalia-501-jvztss
-- _Wabi Sushi_
-  - https://www.figma.com/file/TrCQizPP18SLIBaM5eExqC/Men%C3%BA---Wabi-Sushi
-  - https://codesandbox.io/p/sandbox/menu-wabi-sushi-inicio-dykpsf
 
 [🔼 Regresar](#estudiantes)
 
