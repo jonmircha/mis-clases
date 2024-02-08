@@ -246,6 +246,9 @@ Algunas pautas que podemos seguir para evitar ser víctima son:
 - https://timeline.google.com/maps/timeline
 - https://adssettings.google.com/authenticated
 - https://socialcatfish.com/
+- https://urlscan.io/
+- https://radar.cloudflare.com/scan
+- https://www.virustotal.com/gui/home/url
 
 [🔼 Regresar](#notas)
 
@@ -266,6 +269,12 @@ La inteligencia artificial se basa en el uso de algoritmos y modelos matemático
 ### Comunidades _IA_
 
 - https://huggingface.co/
+
+### Videos
+
+- [Las mejores herramientas de IA en 2024
+  ](https://www.youtube.com/watch?v=o0psJ260Rgg).
+- [Errores que cometes al usar ChatGPT](https://www.youtube.com/watch?v=JOJpO-q2dW8).
 
 ### Herramientas _IA_
 
