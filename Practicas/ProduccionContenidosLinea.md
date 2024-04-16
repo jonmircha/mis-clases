@@ -57,3 +57,23 @@ Historia de la empresa:
 - Revisión de la producción del audio promocional de 15s.
 
 ---
+
+## Proyecto 2
+
+### Proyecto 2 - Revisión 1: Guiones y Storyboard
+
+- Revisión del guión y storyboard del video promocional de 20s.
+- Revisión del guión del audio promocional de 10s.
+- Revisión del guión/lluvia de ideas de la infografía digital.
+
+### Proyecto 2 - Revisión 2: Producción Audiovisual
+
+- Revisión de avance de la producción del video promocional de 20s.
+- Revisión de avance de la producción del video promocional de 20s.
+- Revisión de avance de la producción de la infografia digital.
+
+### Proyecto 2 - Revisión 3: Producción Audiovisual
+
+- Revisión de avance de la producción del video promocional de 20s.
+- Revisión de avance de la producción del video promocional de 20s.
+- Revisión de avance de la producción de la infografia digital.

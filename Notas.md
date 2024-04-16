@@ -24,6 +24,7 @@ Diferentes enlaces, conceptos y notas que uso en mis clases, estan ordenados de 
 - [Inversiones](#inversiones).
 - [Marca Personal](#marca-personal).
 - [_Scrum_](#scrum).
+- [Venta Productos en Línea](#venta-productos-en-línea).
 - [_YouTube_](#youtube).
 
 [🏡](./README.md)
@@ -121,6 +122,7 @@ Diferentes enlaces, conceptos y notas que uso en mis clases, estan ordenados de 
 
 ### Sitios _CV_ y _One Page_
 
+- https://www.carmenansio.dev/
 - https://weaintplastic.com/
 - https://www.gregives.co.uk/
 - https://tonsky.me/
@@ -132,6 +134,7 @@ Diferentes enlaces, conceptos y notas que uso en mis clases, estan ordenados de 
 ### Sitios _Landing Page_
 
 - https://www.apple.com/iphone/
+- https://www.drlarosa.com/comunidad
 - https://bearsandguts.com/
 - https://jonmircha.com/taller-minimalista
 
@@ -280,9 +283,16 @@ La inteligencia artificial se basa en el uso de algoritmos y modelos matemático
 
 - https://evolupedia.com/herramientas-ia/
 
+#### Buscadores
+
+- https://gemini.google.com/
+- https://copilot.microsoft.com/
+- https://www.bing.com/
+
 #### Texto
 
 - https://chat.openai.com/chat
+- https://mistral.ai/
 - https://www.perplexity.ai/
 - https://writer.com/ai-content-detector/
 - https://www.copy.ai/
@@ -308,18 +318,32 @@ La inteligencia artificial se basa en el uso de algoritmos y modelos matemático
 #### Identidad de Marca
 
 - https://namelix.com/
+- https://www.design.com/
 - https://brandmark.io/
 - https://brandmark.io/tools/
 - https://app.brandmark.io/v3/
+
+#### _UI_
+
+- https://www.usegalileo.ai/
+- https://uizard.io/
 
 #### Audio
 
 - https://elevenlabs.io/
 - https://www.stableaudio.com/
+- https://www.naturalreaders.com/
+- https://boomy.com/
 
 #### Video
 
 - https://www.synthesia.io/
+- https://pixverse.ai/
+- https://openai.com/sora
+- https://pika.art/
+- https://runwayml.com/
+- https://www.narakeet.com/
+- https://www.genmo.ai/
 
 #### Presentaciones
 
@@ -497,6 +521,49 @@ _Scrum_ cuenta con roles definidos, como el _Scrum Master_, el _Product Owner_ y
 - https://trello.com/
 - https://trello.com/guide
 - https://www.youtube.com/watch?v=PvggrbuZA9Y
+
+[🔼 Regresar](#notas)
+
+---
+
+## Venta Productos en Línea
+
+### Plataformas de venta de productos físicos
+
+- https://www.amazon.com.mx/
+- https://www.mercadolibre.com.mx/
+- https://www.shopify.com/mx
+- https://bazarama.com/
+- https://www.tiendanube.com/mx/
+
+### Plataformas de venta de productos digitales
+
+- https://hotmart.com/
+- https://gumroad.com/
+- https://payhip.com/
+- https://tiendup.com/
+- https://kdp.amazon.com/es_ES/
+
+### Plataformas cursos online
+
+- https://www.udemy.com/
+- https://www.domestika.org/
+- https://www.skillshare.com/
+- https://teachable.com/
+- https://thinkific.com/
+- https://www.sabionet.com/
+- https://uteach.io/
+
+### Plataformas de Pago
+
+- https://www.paypal.com/mx/home
+- https://stripe.com/mx
+- https://www.mercadopago.com.mx/
+
+### Videos Referencia
+
+- https://www.youtube.com/watch?v=fsxXvYavGzc
+- https://www.youtube.com/watch?v=77Kkj02d0A0
 
 [🔼 Regresar](#notas)
 
