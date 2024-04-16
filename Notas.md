@@ -554,7 +554,7 @@ _Scrum_ cuenta con roles definidos, como el _Scrum Master_, el _Product Owner_ y
 - https://www.sabionet.com/
 - https://uteach.io/
 
-### Plataformas de Pago
+### Plataformas de pago
 
 - https://www.paypal.com/mx/home
 - https://stripe.com/mx
