@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script type="module">
+        import { Toast } from 'bootstrap.esm.min.js'
+        Array.from(document.querySelectorAll('.toast'))
+          .forEach(toastNode => new Toast(toastNode))
+      </script>
+    <link href="https://fonts.googleapis.com/css2?family=Carlito&family=Crimson+Text:wght@600&family=Montserrat:wght@400;700&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="css/style.css" / link>
+  </head>
+  
+      <body>
+        <nav class="navbar navbar-expand-lg sticky-top rectangulo">
+       <div class="container-fluid">
+           <button id="button"> Detalle del pedido </button>
+           <img src="img/TokiDokiLogo.png" alt="TokiDokiLogo" logo/>
+       </nav> 
+
+
+
+
+       <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+               Entradas
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+    
+  
+              <div class="row">
+                  <div class="card">
+                      <div class="col-3">
+                        <img class="imgcard" src="img/Camarones.png" alt="imgcard">
+                      </div>
+                      <div class="platillo ml-4">
+                          <p> <strong> Camarones Roca </strong> </p> 
+                          <p>
+                              Camarones capeados con mayonesa y chipotle
+                          </p>
+                      </div>
+                      <div class="platillo">
+                          <p><strong> $94</strong> </p>
+                          <button class="button">Agregar</button>
+                      </div>
+                  </div>
+
+
+
+
+                      <div class="card">
+                          <div class="col-3">
+                            <img class="imgcard" src="img/Kushiage.png" alt="imgcard">
+                          </div>
+                          <div class="platillo ml-4">
+                              <p> <strong> Kushiage </strong> </p> 
+                              <p>
+                                  Kushiage de plátano
+                             </p>
+                          </div>
+                          <div class="platillo">
+                              <p><strong> $25</strong> </p>
+                              <button class="button">Agregar</button>
+                          </div>
+                          </div>
+
+
+
+                        
+                          <div class="card">
+                              <div class="col-3">
+                                <img class="imgcard" src="img/Edamame.png" alt="imgcard">
+                              </div>
+                              <div class="platillo ml-4">
+                                  <p> <strong> Edamames al vapor  </strong> </p> 
+                                  <p>
+                                      Edamames al vapor
+                                  </p>
+                              </div>
+                              <div class="platillo">
+                                  <p><strong> $39</strong> </p>
+                                  <button class="button">Agregar</button>
+                              </div>
+                              </div>
+
+
+                          
+                          <div class="card">
+                              <div class="col-3">
+                                <img class="imgcard" src="img/Gohan.png" alt="imgcard">
+                              </div>
+                              <div class="platillo ml-4">
+                                  <p> <strong> Arroz Gohan</strong> </p> 
+                                  <p>
+                                      Arroz gohan al vapor
+                                  </p>
+                              </div>
+                              <div class="platillo">
+                                  <p><strong> $30</strong> </p>
+                                  <button class="button">Agregar</button>
+                              </div>
+                              </div>
+
+
+
+                          
+                              <div class="card">
+                                  <div class="col-3">
+                                    <img class="imgcard" src="img/EdamamePicante.png" alt="imgcard">
+                                  </div>
+                                  <div class="platillo ml-4">
+                                      <p> <strong> Edamames Especiales </strong> </p> 
+                                      <p>
+                                          Edamames picositos
+                                      </p>
+                                  </div>
+                                  <div class="platillo">
+                                      <p><strong> $94</strong> </p>
+                                      <button class="button">Agregar</button>
+                                  </div>
+                                  </div>
+    
+
+                                </div>
+                              </div>
+                            </div>
+                          
+
+             
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                  Sopa
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                               
+    
+                <div class="row">
+                  <div class="card">
+                      <div class="col-3">
+                        <img class="imgcard" src="img/Sopa.png" alt="imgcard">
+                      </div>
+                      <div class="platillo ml-4">
+                          <p> <strong> Miso </strong> </p> 
+                          <p>
+                              Sopa miso con tofu y cebollín
+                          </p>
+                      </div>
+                      <div class="platillo">
+                          <p><strong> $35</strong> </p>
+                          <button class="button">Agregar</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse3" aria-expanded="false" aria-controls="panelsStayOpen-collapse3">
+            Arroz
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapse3" class="accordion-collapse collapse">
+         
+
+<div class="row">
+<div class="card">
+<div class="col-3">
+  <img class="imgcard" src="img/Verduras.png" alt="imgcard">
+</div>
+<div class="platillo ml-4">
+    <p> <strong> Yakimeshi de verduras </strong> </p> 
+    <p>
+        Arroz yakimeshi con distintas verduras
+    </p>
+</div>
+<div class="platillo">
+    <p><strong> $45</strong> </p>
+    <button class="button">Agregar</button>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+<div class="col-3">
+<img class="imgcard" src="img/Pollo.png" alt="imgcard">
+</div>
+<div class="platillo ml-4">
+<p> <strong> Yakimeshi de pollo </strong> </p> 
+<p>
+  Arroz yakimeshi con pollo
+</p>
+</div>
+<div class="platillo">
+<p><strong> $55</strong> </p>
+<button class="button">Agregar</button>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="card">
+  <div class="col-3">
+  <img class="imgcard" src="img/Mixto.png" alt="imgcard">
+  </div>
+  <div class="platillo ml-4">
+  <p> <strong> Yakimeshi mixto </strong> </p> 
+  <p>
+    Arroz yakimeshi con res, camarón, verduras y pollo
+  </p>
+  </div>
+  <div class="platillo">
+  <p><strong> $60</strong> </p>
+  <button class="button">Agregar</button>
+  </div>
+  </div>
+
+
+
+</div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4" aria-expanded="false" aria-controls="panelsStayOpen-collapse4">
+      Bowls
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse">
+   
+
+<div class="row">
+<div class="card">
+<div class="col-3">
+<img class="imgcard" src="img/DeliTuna.png" alt="imgcard">
+</div>
+<div class="platillo ml-4">
+<p> <strong> Deli Tuna </strong> </p> 
+<p>
+  Bowl de atún, cebollín, surimi, aguacate y ajonjolí
+</p>
+</div>
+<div class="platillo">
+<p><strong> $130</strong> </p>
+<button class="button">Agregar</button>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+<div class="col-3">
+<img class="imgcard" src="img/HappySalmon.png" alt="imgcard">
+</div>
+<div class="platillo ml-4">
+<p> <strong> Happy Salmon </strong> </p> 
+<p>
+Bowl de salmón, cebollín, aguacate, edamame, tampico, ajonjolí y nori
+</p>
+</div>
+<div class="platillo">
+<p><strong> $141</strong> </p>
+<button class="button">Agregar</button>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="card">
+<div class="col-3">
+<img class="imgcard" src="img/Pollo Teriyaki.jpg" alt="imgcard">
+</div>
+<div class="platillo ml-4">
+<p> <strong> Pollo Teriyaki </strong> </p> 
+<p>
+Bown con pollo estilo teriyaki, pimientos, espinaca y ajonjolí
+</p>
+</div>
+<div class="platillo">
+<p><strong> $127</strong> </p>
+<button class="button">Agregar</button>
+</div>
+</div>
+
+
+
+
+
+
+
+  <div class="card">
+  <div class="col-3">
+  <img class="imgcard" src="img/SpicyTuna.png" alt="imgcard">
+  </div>
+  <div class="platillo ml-4">
+  <p> <strong> Spicy Tuna </strong> </p> 
+  <p>
+    Bowl de atún, mayonesa picante y aguacate
+  </p>
+  </div>
+  <div class="platillo">
+  <p><strong> $138</strong> </p>
+  <button class="button">Agregar</button>
+  </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="card">
+  <div class="col-3">
+  <img class="imgcard" src="img/VeggieVegan.png" alt="imgcard">
+  </div>
+  <div class="platillo ml-4">
+  <p> <strong> Veggie Vegan </strong> </p> 
+  <p>
+  Bowl de zanahoria, cebollín, pepino, edamames, aguacate, ajonjolí y nori
+  </p>
+  </div>
+  <div class="platillo">
+  <p><strong> $150</strong> </p>
+  <button class="button">Agregar</button>
+  </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <div class="card">
+  <div class="col-3">
+  <img class="imgcard" src="img/WallStreet.png" alt="imgcard">
+  </div>
+  <div class="platillo ml-4">
+  <p> <strong> Wall Street </strong> </p> 
+  <p>
+  Bowl de atún, salmón, aguacate, pepino, tampico y ajonjolí
+  </p>
+  </div>
+  <div class="platillo">
+  <p><strong> $144</strong> </p>
+  <button class="button">Agregar</button>
+  </div>
+  </div>
+
+
+
+</div>
+</div>
+</div>
+
+      
+
+
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse6" aria-expanded="false" aria-controls="panelsStayOpen-collapse6">
+      Rollos
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapse6" class="accordion-collapse collapse">
+   
+
+<div class="row">
+<div class="card">
+<div class="col-3">
+<img class="imgcard" src="img/4x4.png" alt="imgcard">
+</div>
+<div class="platillo ml-4">
+<p> <strong> 4x4 </strong> </p> 
+<p>
+  Pequeñas piezas por dentro con salmón, atún, pepino y aguacate
+</p>
+</div>
+<div class="platillo">
+<p><strong> $92</strong> </p>
+<button class="button">Agregar</button>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+<div class="col-3">
+<img class="imgcard" src="img/AguacateLove.png" alt="imgcard">
+</div>
+<div class="platillo ml-4">
+<p> <strong> Aguacate Love </strong> </p> 
+<p>
+Rollo por fuera aguacate y ajonjolí y por dentro atún, surimi y pepino
+</p>
+</div>
+<div class="platillo">
+<p><strong> $93</strong> </p>
+<button class="button">Agregar</button>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="card">
+<div class="col-3">
+<img class="imgcard" src="img/California.png" alt="imgcard">
+</div>
+<div class="platillo ml-4">
+<p> <strong> California </strong> </p> 
+<p>
+Dentro aguacate, surimi y pepino Fuera ajonjolí
+</p>
+</div>
+<div class="platillo">
+<p><strong> $65</strong> </p>
+<button class="button">Agregar</button>
+</div>
+</div>
+
+
+
+
+
+
+
+  <div class="card">
+  <div class="col-3">
+  <img class="imgcard" src="img/CamarónChamoy.png" alt="imgcard">
+  </div>
+  <div class="platillo ml-4">
+  <p> <strong> Camarón Chamoy </strong> </p> 
+  <p>
+    Dentro camarón Fuera mango y chamoy
+  </p>
+  </div>
+  <div class="platillo">
+  <p><strong> $95</strong> </p>
+  <button class="button">Agregar</button>
+  </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="card">
+  <div class="col-3">
+  <img class="imgcard" src="img/ClassicAtun.png" alt="imgcard">
+  </div>
+  <div class="platillo ml-4">
+  <p> <strong> Classic Atun </strong> </p> 
+  <p>
+  Dentro pepino y aguacate Fuera atún
+  </p>
+  </div>
+  <div class="platillo">
+  <p><strong> $89</strong> </p>
+  <button class="button">Agregar</button>
+  </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <div class="card">
+  <div class="col-3">
+  <img class="imgcard" src="img/ElReyCangrejo.png" alt="imgcard">
+  </div>
+  <div class="platillo ml-4">
+  <p> <strong> El Rey Cangrejo </strong> </p> 
+  <p>
+  Dentro surimi, pepino, filadelfia      Fuera filadelfia
+  </p>
+  </div>
+  <div class="platillo">
+  <p><strong> $69</strong> </p>
+  <button class="button">Agregar</button>
+  </div>
+  </div>
+
+
+
+
+  <div class="card">
+    <div class="col-3">
+    <img class="imgcard" src="img/Filadelfia.png" alt="imgcard">
+    </div>
+    <div class="platillo ml-4">
+    <p> <strong> Filadelfia </strong> </p> 
+    <p>
+    Dentro salmón y pepino        Fuera filadelfia
+    </p>
+    </div>
+    <div class="platillo">
+    <p><strong> $69</strong> </p>
+    <button class="button">Agregar</button>
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    
+   
+      <div class="card">
+      <div class="col-3">
+      <img class="imgcard" src="img/PabloTheChihuahua.png" alt="imgcard">
+      </div>
+      <div class="platillo ml-4">
+      <p> <strong> Pablo The Chihuahua  </strong> </p> 
+      <p>
+        Fuera empanizado  Dentro camarón y aguacate
+      </p>
+      </div>
+      <div class="platillo">
+      <p><strong> $103</strong> </p>
+      <button class="button">Agregar</button>
+      </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="card">
+      <div class="col-3">
+      <img class="imgcard" src="img/tUNADrAGON.png" alt="imgcard">
+      </div>
+      <div class="platillo ml-4">
+      <p> <strong> Tuna Dragon </strong> </p> 
+      <p>
+      Dentro aguacate, pepino, sriracha mayo   Fuera atún y masago
+      </p>
+      </div>
+      <div class="platillo">
+      <p><strong> $98</strong> </p>
+      <button class="button">Agregar</button>
+      </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="card">
+      <div class="col-3">
+      <img class="imgcard" src="img/VeggieRoll.png" alt="imgcard">
+      </div>
+      <div class="platillo ml-4">
+      <p> <strong> Veggie Roll </strong> </p> 
+      <p>
+      Dentro aguacate, pepino y mango     Fuera cebollín
+      </p>
+      </div>
+      <div class="platillo">
+      <p><strong> $69</strong> </p>
+      <button class="button">Agregar</button>
+      </div>
+      </div>
+    
+    
+    
+
+
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseExt" aria-expanded="false" aria-controls="panelsStayOpen-collapseExt">
+      Extras
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapseExt" class="accordion-collapse collapse">
+   
+
+<div class="row">
+<div class="card">
+<div class="col-3">
+<img class="imgcard" src="img/Furikake.png" alt="imgcard">
+</div>
+<div class="platillo ml-4">
+<p> <strong> Furikake </strong> </p> 
+<p>
+  Porción de furikake
+</p>
+</div>
+<div class="platillo">
+<p><strong> $15</strong> </p>
+<button class="button">Agregar</button>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+<div class="col-3">
+<img class="imgcard" src="img/PolloTeriyaki.png" alt="imgcard">
+</div>
+<div class="platillo ml-4">
+<p> <strong> Pollo Teriyaki </strong> </p> 
+<p>
+Porción de pollo teriyaki y arroz
+</p>
+</div>
+<div class="platillo">
+<p><strong> $15</strong> </p>
+<button class="button">Agregar</button>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="card">
+<div class="col-3">
+<img class="imgcard" src="img/Tampico.png" alt="imgcard">
+</div>
+<div class="platillo ml-4">
+<p> <strong> Tampico </strong> </p> 
+<p>
+Porción de tampico
+</p>
+</div>
+<div class="platillo">
+<p><strong> $15</strong> </p>
+<button class="button">Agregar</button>
+</div>
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsePostres" aria-expanded="false" aria-controls="panelsStayOpen-collapsePostres">
+      Postres
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapsePostres" class="accordion-collapse collapse">
+   
+
+<div class="row">
+<div class="card">
+<div class="col-3">
+<img class="imgcard" src="img/PostreBanoffe.png" alt="imgcard">
+</div>
+<div class="platillo ml-4">
+<p> <strong> Banoffe </strong> </p> 
+<p>
+  Pie de plátano estilo inglés
+</p>
+</div>
+<div class="platillo">
+<p><strong> $45</strong> </p>
+<button class="button">Agregar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseBebidas" aria-expanded="false" aria-controls="panelsStayOpen-collapseBebidas">
+      Bebidas
+    </button>
+  </h2>
+  <div id="panelsStayOpen-collapseBebidas" class="accordion-collapse collapse">
+   
+
+<div class="row">
+<div class="card">
+<div class="col-3">
+<img class="imgcard" src="img/AguaJamaica.png" alt="imgcard">
+</div>
+<div class="platillo ml-4">
+<p> <strong> Agua de jamaica </strong> </p> 
+<p>
+  Agua natural, elaborada con flor de jamaica
+</p>
+</div>
+<div class="platillo">
+<p><strong> $25</strong> </p>
+<button class="button">Agregar</button>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+<div class="col-3">
+<img class="imgcard" src="img/Calpis.png" alt="imgcard">
+</div>
+<div class="platillo ml-4">
+<p> <strong> Calpis </strong> </p> 
+<p>
+Bebida casera de calpis, sabor tradicional
+</p>
+</div>
+<div class="platillo">
+<p><strong> $39</strong> </p>
+<button class="button">Agregar</button>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="card">
+<div class="col-3">
+<img class="imgcard" src="img/Ciel.png" alt="imgcard">
+</div>
+<div class="platillo ml-4">
+<p> <strong> Agua natural </strong> </p> 
+<p>
+Botella de agua Ciel
+</p>
+</div>
+<div class="platillo">
+<p><strong> $39</strong> </p>
+<button class="button">Agregar</button>
+</div>
+</div>
+
+
+
+
+
+
+
+  <div class="card">
+  <div class="col-3">
+  <img class="imgcard" src="img/CocaCola.png" alt="imgcard">
+  </div>
+  <div class="platillo ml-4">
+  <p> <strong> Coca Cola </strong> </p> 
+  <p>
+    Refresco de lata, sabor Coca cOLA
+  </div>
+  <div class="platillo">
+  <p><strong> $25</strong> </p>
+  <button class="button">Agregar</button>
+  </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="card">
+  <div class="col-3">
+  <img class="imgcard" src="img/Fanta.png" alt="imgcard">
+  </div>
+  <div class="platillo ml-4">
+  <p> <strong> Fanta  </strong> </p> 
+  <p>
+  Refresco de lata sabor naranja
+  </p>
+  </div>
+  <div class="platillo">
+  <p><strong> $25</strong> </p>
+  <button class="button">Agregar</button>
+  </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <div class="card">
+  <div class="col-3">
+  <img class="imgcard" src="img/Mundet.png" alt="imgcard">
+  </div>
+  <div class="platillo ml-4">
+  <p> <strong> Mundet </strong> </p> 
+  <p>
+  Refresco de lata, sabor manzana
+  </p>
+  </div>
+  <div class="platillo">
+  <p><strong> $25 </strong> </p>
+  <button class="button">Agregar</button>
+  </div>
+  </div>
+
+
+
+
+  <div class="card">
+    <div class="col-3">
+    <img class="imgcard" src="img/Sprite.png" alt="imgcard">
+    </div>
+    <div class="platillo ml-4">
+    <p> <strong> Sprite </strong> </p> 
+    <p>
+     Refresco de lata, sabor lima-limón
+    </p>
+    </div>
+    <div class="platillo">
+    <p><strong> $25</strong> </p>
+    <button class="button">Agregar</button>
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    
+   
+      <div class="card">
+      <div class="col-3">
+      <img class="imgcard" src="img/Pellegrino.png" alt="imgcard">
+      </div>
+      <div class="platillo ml-4">
+      <p> <strong> San Pellegrino  </strong> </p> 
+      <p>
+        Refresco, agua mineral
+      </p>
+      </div>
+      <div class="platillo">
+      <p><strong> $37</strong> </p>
+      <button class="button">Agregar</button>
+      </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="card">
+      <div class="col-3">
+      <img class="imgcard" src="img/Ramuné.png" alt="imgcard">
+      </div>
+      <div class="platillo ml-4">
+      <p> <strong> Ramuné </strong> </p> 
+      <p>
+      Sabor Ramuné original
+      </p>
+      </div>
+      <div class="platillo">
+      <p><strong> $51</strong> </p>
+      <button class="button">Agregar</button>
+      </div>
+      </div>
+      
+      
+      
+
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+    
+<footer id="pie">
+    <p>
+        Lunes a Miércoles: 12:30 am a 8:30 pm 
+        Jueves a Sábado: 1:00 pm a 9:00 pm
+        Domingo: Cerrado
+    </p>
+    <p>
+        ©2018 Toki Doki Sushi®. Todos los derechos reservados.</small>
+   
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+        </svg>
+  
+  
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+        </svg>
+  
+
+
+      </p>
+
+    </footer>
+    </body>
+    </html>
+

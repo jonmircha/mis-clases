@@ -1,0 +1,110 @@
+/* Marcin*/
+
+@font-face {
+  font-family: "Marcin";
+  src: url("../fonts/MarcinAnt.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Marcin_Light";
+  src: url("../fonts/MarcinAntLight.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Marcin_Medium";
+  src: url("../fonts/MarcinAntMedium.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* Majerit*/
+@font-face {
+  font-family: "Majerit_Bold";
+  src: url("../fonts/MajeritMedium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Majerit";
+  src: url("../fonts/MajeritDeck.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Majerit";
+}
+
+header {
+  font-family: "MarcinAnt";
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-family: "Majerit_Bold";
+}
+
+h3 {
+  font-family: "Majerit_Medium";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h4 {
+  font-family: "Majerit_Medium";
+}
+
+h5 {
+  font-family: "Majerit_Bold";
+}
+h6 {
+  color: rgb(101, 100, 100);
+  font-size: 12px;
+}
+
+p {
+  font-family: "Majerit";
+  font-size: 15px;
+}
+
+.little {
+  font-size: 11px;
+}
+
+.nota {
+  font-size: 15px;
+}
+
+.article {
+  font-size: 22px;
+}
+
+.Sección {
+  font-size: 27px;
+}
+
+.gray {
+  color: rgb(101, 100, 100);
+}
+
+.sub {
+  text-decoration: underline;
+}
+
+.bo {
+  color: rgb(234, 79, 150);
+}
+
+.der {
+  text-align: right;
+}
+
+.gris {
+  color: rgb(142, 142, 142);
+}
+a {
+  color: black;
+  text-decoration: none;
+}

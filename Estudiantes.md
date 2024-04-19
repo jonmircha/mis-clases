@@ -75,7 +75,13 @@ Enlaces de los mejores proyectos de mis estudiantes.
 
 ## _IA_
 
-- https://www.canva.com/design/DAFbWV1jz-Y/eBzkWl3dQGEFingJlLLBdA/view
+- Tequila Elixer
+  - https://www.canva.com/design/DAFbWV1jz-Y/eBzkWl3dQGEFingJlLLBdA/view
+- Soju Wynyan
+  - https://www.canva.com/design/DAF7f1PrMiE/hrgVDcxJH__37hAGVVcafg/edit
+  - https://www.canva.com/design/DAF8WBO6IcM/XWyNy0KIGWA_s-uUcmB5hA/edit
+- Vodka Leopardo Real
+  - https://www.canva.com/design/DAF7dwlwcJ8/Mu_J1Sak-S8RkqqrldM5mg/edit
 
 [🔼 Regresar](#estudiantes)
 

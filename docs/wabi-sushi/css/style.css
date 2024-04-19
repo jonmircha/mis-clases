@@ -1,0 +1,45 @@
+html {
+  font-family: "Poppins", sans-serif;
+  font-family: "Sora", sans-serif;
+  color: #494848;
+  padding: 30px;
+}
+
+body {
+  background-color: #f9f5e7;
+}
+
+.container {
+  padding: 35px;
+}
+
+h2 {
+  font-family: Sora;
+  font-weight: lighter;
+  font-size: 35px;
+  text-align: center;
+  padding: 20px;
+}
+li {
+  font-family: Poppins;
+  font-weight: lighter;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+}
+
+a {
+  color: #494848;
+}
+
+a:hover {
+  color: #e93230;
+}
+
+.pb-5 {
+  padding: ($spacer * 0.5) !important;
+}
+
+.pt-2 {
+  padding-top: ($spacer * 0.5) !important;
+}

@@ -1,0 +1,125 @@
+body {
+  font-family: "Red Hat Display", sans-serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #fe904b, #fb724c);
+  color: #fff;
+  border-color: #fff;
+  border-color: transparent !important;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #fb724c, #fe904b);
+  color: #fff;
+}
+
+.btn-text {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#color-container-form {
+  border-color: #fe904b !important;
+  border-radius: 24px !important;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.custom-card {
+  border: 4px solid #fb724c !important;
+  border-radius: 24px !important;
+}
+
+.custom-card-number {
+  border: 4px solid #c39440 !important;
+  border-radius: 24px !important;
+}
+
+.custom-card-orange {
+  border: 1.5px solid transparent;
+  padding: 2rem;
+  border-radius: 24px !important;
+  background: linear-gradient(180deg, #fe904b 0%, #fb724c 100%);
+  color: white !important;
+}
+
+.custom-card-pink {
+  border: 1.5px solid transparent;
+  padding: 2rem;
+  border-radius: 24px !important;
+  background: linear-gradient(180deg, #fe8a7f 0%, #fe8a7f 100%);
+  color: white !important;
+}
+
+.custom-title-black {
+  color: black !important;
+  width: 100%;
+}
+
+.custom-title-golden {
+  color: #c39440 !important;
+}
+.custom-title {
+  color: #fb724c !important;
+}
+
+.footer-icons i {
+  font-size: 50px;
+  margin: 0 10px;
+  color: #fb724c;
+}
+
+.hero-content {
+  max-width: 600px;
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-section {
+  background-color: #c39440;
+}
+
+.icon {
+  color: #fe904b;
+  font-size: 40px;
+}
+
+.icon-card {
+  width: 80px !important;
+}
+
+.navbar-custom {
+  backdrop-filter: blur(10px);
+}
+
+.navbar-background {
+  background-color: #c39440;
+}
+
+.nav-link {
+  border: none !important;
+  border-bottom: 3px solid transparent !important;
+  cursor: pointer;
+}
+
+.nav-link.active {
+  border-color: #fe904b !important;
+}
+
+.nav-tabs {
+  border: none !important;
+}

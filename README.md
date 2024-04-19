@@ -19,3 +19,12 @@ En este repositorio tengo contenidos, recursos y prácticas para mis clases.
 - [Metodologías de Desarrollo para Aplicaciones Web](./Practicas/MetodologíasDesarrolloAplicacionesWeb.md).
 - [Programación I](./Practicas/ProgramacionI.md).
 - [Teorías Digitales](./Practicas/TeoriasDigitales.md).
+
+## Proyectos
+
+### Menú Restaurante
+
+#### _Carls JR_
+
+- [Figma]()
+- [Web]()

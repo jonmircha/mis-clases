@@ -69,11 +69,27 @@ Historia de la empresa:
 ### Proyecto 2 - Revisión 2: Producción Audiovisual
 
 - Revisión de avance de la producción del video promocional de 20s.
-- Revisión de avance de la producción del video promocional de 20s.
+- Revisión de avance de la producción del audio promocional de 10s.
 - Revisión de avance de la producción de la infografia digital.
 
 ### Proyecto 2 - Revisión 3: Producción Audiovisual
 
 - Revisión de avance de la producción del video promocional de 20s.
-- Revisión de avance de la producción del video promocional de 20s.
+- Revisión de avance de la producción del audio promocional de 10s.
 - Revisión de avance de la producción de la infografia digital.
+
+## Proyecto 3
+
+### Proyecto 3 - Definición de temática para video curso y ebook
+
+Deja por escrito en esta asignación la definición de la temática que tendrá tu video curso y ebook.
+
+### Proyecto 3 - Entrega de video curso y ebook
+
+En esta asignación entrega el material audiovisual (videos y pdf) de tu video curso y ebook.
+
+### Proyecto 3 - Publicación de video curso y ebook
+
+En esta asignación deja el link de la publicación de tu video curso y ebook en la plataforma que lo hayas comercializado.
+
+También entrega al profesor tu reflexión escrita a mano sobre la importancia de buscar opciones de ingresos pasivos con la creación y comercialización de contenidos digitales.
