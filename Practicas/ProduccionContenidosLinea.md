@@ -82,7 +82,9 @@ Historia de la empresa:
 
 ### Proyecto 3 - Definición de temática para video curso y ebook
 
-Deja por escrito en esta asignación la definición de la temática que tendrá tu video curso y ebook.
+En un documento de Word o PDF deja por escrito en esta asignación la definición de la temática que tendrá tu video curso y ebook.
+
+Así como un índice temático preliminar de los posibles temas que abordarás en tu video curso y ebook.
 
 ### Proyecto 3 - Entrega de video curso y ebook
 

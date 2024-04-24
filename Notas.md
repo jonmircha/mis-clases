@@ -48,6 +48,7 @@ Diferentes enlaces, conceptos y notas que uso en mis clases, estan ordenados de 
 - [_Bitcoin Rainbow_](https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/)
 - [Documental _Cryptopía_](https://www.youtube.com/watch?v=P6vYyqHG54Y)
 - [Glosario _Web3_](https://blog.bitso.com/es-mx/criptomonedas-mx/glosario-web3)
+- [_Bitcoin_ para tontos](https://pau.ninja/que-es-bitcoin-para-tontos/)
 
 [🔼 Regresar](#notas)
 
