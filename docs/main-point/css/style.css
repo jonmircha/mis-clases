@@ -1,0 +1,109 @@
+html {
+  font-family: "Nobile", sans-serif;
+  font-family: "Noticia Text", serif;
+}
+
+body {
+  font-family: "Nobile", sans-serif;
+}
+
+.typo-noticia {
+  font-family: "Noticia Text", serif;
+}
+
+.bg-purple {
+  background-color: #5d48f5;
+}
+
+.bg-orange {
+  background-color: #f8941f;
+}
+
+.color-purple {
+  color: #5d48f5;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-grey {
+  color: grey;
+}
+.color-lightgrey {
+  color: rgb(177, 173, 173);
+}
+
+.padding-header {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.padding-side {
+  padding-right: 5px;
+}
+
+.ps-3 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.pr {
+  padding-right: 10px;
+}
+
+.color-button {
+  color: white;
+}
+
+.navbar {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link {
+  color: white;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.pt-3 {
+  padding: ($spacer * 0.5) !important;
+}
+
+.pb-3 {
+  padding: ($spacer * 0.5) !important;
+}
+
+.font-11px {
+  font-size: 15px;
+}
+
+.font-light {
+  font-weight: lighter;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.padding {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.font-small {
+  font-size: 12px;
+}
+
+.font-10px {
+  font-size: 10px;
+}
+
+.font-15px {
+  font-size: 15px;
+}
+
+.font-big {
+  font-size: 75px;
+}

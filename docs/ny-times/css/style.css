@@ -1,0 +1,103 @@
+html {
+  font-family: 'Libre Baskerville', serif;
+  background-color: white;
+  justify-content: center;
+}
+
+a {
+  color: black;
+  font-size: 8pt !important;
+  font-size: 800;
+  font-family: 'Libre Baskerville', serif;
+}
+
+a:hover {
+  color: black !important;
+  text-decoration: none;
+}
+
+.espacio {
+  margin-bottom: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fcfcfc;
+  font-family: sans-serif;
+}
+footer {
+
+  background: #111;
+  height: auto;
+  width: 100vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 7pt !important;
+  text-align: center;
+  font-family: "Francois One", sans-serif;
+}
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.card {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 10px;
+  font-weight: 700;
+  image width: 85px;
+  image height: 71px;
+  
+}
+
+.card-title{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight:800;
+} 
+
+h1{
+  font-family: 'Libre Baskerville', serif;
+font-weight: 800;
+}
+
+h2 {
+  font-family: 'Libre Baskerville', serif;
+font-size: 23px;
+font-weight: 800;
+}
+
+h3 {
+font-family: 'Libre Baskerville', serif;
+font-size: 22px;
+font-weight: 800;
+}
+
+h5{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 16px;
+  font-weight: 800; 
+}
+
+h6{
+  font-family: 'Libre Baskerville', serif;
+font-weight: 800;
+}
+
+
+
+p{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+a {
+  color:black;
+  text-decoration: none;
+}
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introducción al DOM</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dom.css" />
+    <link id="theme" rel="stylesheet" href="css/light.css" />
+  </head>
+  <body>
+    <h1 id="titulo">Introducción al DOM</h1>
+    <p class="text-left bg-palegreen fs-20">lorem 1</p>
+    <p class="text-center bg-skyblue fs-16">lorem 2</p>
+    <p class="text-right bg-palegreen fs-12">lorem 3</p>
+    <p class="text-center bg-skyblue fs-8">lorem 4</p>
+    <a href="https://jonmircha.com/html" target="_blank">
+      Guía rápida HTML y CSS
+    </a>
+    <br />
+    <img src="https://placeimg.com/200/200/animals" alt="Animals" />
+    <img src="https://placeimg.com/200/200/people" alt="People" />
+    <img src="https://placeimg.com/200/200/nature" alt="Nature" />
+    <form>
+      <input type="search" placeholder="Buscar..." />
+      <input type="submit" />
+    </form>
+    <iframe
+      id="youtube"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/iXoKA7IILrY"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.819445957572!2d-99.16665210766644!3d19.376969102450236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffa3f9df712d%3A0xd3da5bca9ec18776!2sParque%20Arboledas!5e0!3m2!1ses-419!2smx!4v1664910045560!5m2!1ses-419!2smx"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <ol>
+      <li>Primavera</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Invierno</li>
+    </ol>
+    <ul>
+      <li>Primavera</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Invierno</li>
+    </ul>
+    <ul id="estudiantes"></ul>
+    <p id="p5" class="text-right bg-palegreen fs-20">lorem 5</p>
+    <h2>Eventos</h2>
+    <button id="btn-push-1" onclick="saludar();">Presióname 1</button>
+    <button id="btn-push-2">Presióname 2</button>
+    <p id="p-push-3">Presióname 3</p>
+    <p>Elige un tema para el documento:</p>
+    <form>
+      <input
+        name="theme"
+        id="radio-light"
+        type="radio"
+        data-theme="css/light.css"
+        data-name="Claro"
+        checked
+      />
+      <label for="radio-light">Tema claro</label>
+      <br />
+      <input
+        name="theme"
+        id="radio-dark"
+        type="radio"
+        data-theme="css/dark.css"
+        data-name="Obscuro"
+      />
+      <label for="radio-dark">Tema obscuro</label>
+      <br />
+      <input
+        name="theme"
+        id="radio-sky"
+        type="radio"
+        data-theme="css/sky.css"
+        data-name="Cielo"
+      />
+      <label for="radio-sky">Tema cielo</label>
+      <br />
+      <input
+        name="theme"
+        id="radio-sun"
+        type="radio"
+        data-theme="css/sun.css"
+        data-name="Soleado"
+      />
+      <label for="radio-sun">Tema soleado</label>
+      <br />
+    </form>
+    <hr />
+    <script src="js/dom.js"></script>
+  </body>
+</html>

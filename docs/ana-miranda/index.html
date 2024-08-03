@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>index</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav
+        class="navbar navbar-expand-lg sticky-top"
+        data-bs-theme="light"
+        style="background-color: rgb(255, 255, 255); text-color: black;"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="svg/LOGO.svg"
+              alt="logo"
+              class="img-fluid"
+              height="auto"
+              width="81.03"
+            />
+          </a>
+
+          
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="homes.html">SOBRE MI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="habilidades.html">HABILIDADES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="proyectos.html">PROYECTOS</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" href="contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      
+
+      <style>
+        /* Agrega estilos para cubrir la pantalla de color */
+        .cover-screen {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #263251;
+          z-index: 9999; /* Asegura que esté en la parte superior */
+          display: none; /* Por defecto, oculta la pantalla de cobertura */
+        }
+      </style>
+    </head>
+    <body>
+      <br><br><br>
+      <main class="container">
+        <section class="row">
+            <article class="col-12 col-lg-8""><img src="svg/ana.svg" class="img-fluid rounded-start" alt="">
+            </article>
+            
+<br><br>
+            <article class="col-12 col-lg-2"> 
+        <div class="interactive-element">
+          <div class="outer-circle"></div>
+          <div class="inner-circle"></div>
+        </div>
+      </div>
+    </section>
+
+    <br><br><br><br>
+    <section class="row">
+      <article class="col-12 col-lg-2"></article>
+      <article class="col-12 col-lg-8"></article>
+
+      <article class="col-12 col-lg-2"> 
+          <button class="nav-link btn btn-primary" id="redirectButton">START
+        </button>
+      </article>
+    </section>
+
+    <br><br><br><br>
+      
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="script.js"></script>
+      
+
+    <!-- Agrega un contenedor oculto para cubrir la pantalla -->
+    <div id="coverScreen" class="cover-screen"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Obtén el botón y el contenedor de la pantalla de cobertura
+      var redirectButton = document.getElementById("redirectButton");
+      var coverScreen = document.getElementById("coverScreen");
+
+      // Asigna un manejador de eventos al botón
+      redirectButton.addEventListener("click", function () {
+        // Muestra el contenedor de la pantalla de cobertura
+        coverScreen.style.display = "block";
+
+        // Redirige a la página "home" después de un breve retraso (puedes ajustar el tiempo según tus necesidades)
+        setTimeout(function () {
+          window.location.href = "home.html";
+        }, 1000); // 1000 milisegundos = 1 segundo
+      });
+    </script>
+  </body>
+</html>
+
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

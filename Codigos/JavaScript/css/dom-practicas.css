@@ -1,0 +1,106 @@
+/* **********     Panel     ********** */
+
+.panel {
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  /* visibility cancela la transición de regreso */
+  /* visibility: hidden; */
+  /* De abajo */
+  transform: translate(0, 100%);
+  /* De la derecha */
+  transform: translate(100%, 0);
+  /* De la izquierda */
+  transform: translate(-100%, 0);
+  /* De arriba */
+  transform: translate(0, -100%);
+  transition: transform 0.3s ease, opacity 0.5s ease;
+}
+
+.panel.is-active {
+  transform: translate(0, 0);
+  opacity: 1;
+  /* visibility: visible; */
+}
+
+.panel-btn {
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  right: 1vw;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7df1e;
+}
+
+/* **********     ScrollTopButton     ********** */
+.scroll-top-btn {
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  right: calc(4.25rem + 1vw);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #f7df1e;
+  color: #222;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  transition: all 0.3s ease-out;
+}
+
+.scroll-top-btn:hover {
+  background-color: #222;
+  color: #f7df1e;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* **********     DarkMode     ********** */
+
+.dark-theme-btn {
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  left: 1vw;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #601e9c;
+  color: #f7df1e;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  transition: all 0.3s ease-out;
+}
+
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}

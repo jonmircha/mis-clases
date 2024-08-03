@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(48, 49, 49) !important;
+}
+h1 {
+  font-family: "Francois One", sans-serif;
+  scroll-margin-top: 180px;
+}
+
+a {
+  color: orange !important;
+  font-size: 1.4rem !important;
+  font-family: "Francois One", sans-serif;
+}
+
+text {
+  text-align: center;
+}
+
+.card-body {
+  text-align: center;
+  background-color: rgb(0, 0, 0) !important;
+}
+
+.card-title {
+  color: rgb(255, 255, 255) !important;
+  font-family: "Francois One", sans-serif;
+}
+.card-text {
+  color: rgb(131, 131, 131) !important;
+  font-family: "Francois One", sansserif;
+}
+
+.espacio {
+  margin-bottom: 20px;
+}

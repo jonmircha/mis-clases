@@ -1,0 +1,59 @@
+{
+  "nombre": "Jon",
+  "edad": 38,
+  "soltero": false,
+  "pasatiempos": ["Correr", "Cocinar", "Programar"],
+  "contacto": {
+    "email": "jonmircha@gmail.com",
+    "movil": "5518388261",
+    "web": "https://jonmircha.com"
+  },
+  "tengoGatos": null,
+  "peliculas": [
+    {
+      "nombre": "Rocky",
+      "estreno": "1976",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTY5MDMzODUyOF5BMl5BanBnXkFtZTcwMTQ3NTMyNA@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+      "nombre": "Rocky II",
+      "estreno": "1979",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTQzZjQyMDgtMmQ3YS00ZDE4LWIyYTAtMWRkMWQ4ZTI5ZjA5XkEyXkFqcGdeQXVyMjMwNDgzNjc@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+      "nombre": "Rocky III",
+      "estreno": "1982",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTMyOTYzMDMzMF5BMl5BanBnXkFtZTcwMTkzODM1NA@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+      "nombre": "Rocky IV",
+      "estreno": "1985",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTg3ODk5ODE0NV5BMl5BanBnXkFtZTcwNDkzODM1NA@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+      "nombre": "Rocky V",
+      "estreno": "1990",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTM2Mzc4MTYxM15BMl5BanBnXkFtZTcwODY5NTk1NA@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+      "nombre": "Rocky Balboa",
+      "estreno": "2006",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNWIyNmQyNjctYmVmMS00MGI4LWIxMmUtNjA0ODYzOTA0Yjk0L2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UY268_CR6,0,182,268_AL_.jpg"
+    },
+    {
+      "nombre": "Creed",
+      "estreno": "2015",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNmZkYjQzY2QtNjdkNC00YjkzLTk5NjUtY2MyNDNiYTBhN2M2XkEyXkFqcGdeQXVyMjMwNDgzNjc@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+      "nombre": "Creed II",
+      "estreno": "2018",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYmEyNWZhM2YtZDAyNi00ZjYzLWI2ZWMtOWM4ZmI1MDE0OWNmXkEyXkFqcGdeQXVyMjMwNDgzNjc@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+      "nombre": "Creed III",
+      "estreno": "2023",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZDNlZmRkM2UtZTBiYy00YTlhLThkZmEtM2YwY2FkMTUwZjViXkEyXkFqcGdeQXVyMTMzNDE5NDM2._V1_UX182_CR0,0,182,268_AL_.jpg"
+    }
+  ]
+}

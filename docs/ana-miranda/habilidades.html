@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>index</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav
+        class="navbar navbar-expand-lg sticky-top"
+        data-bs-theme="light"
+        style="background-color: rgb(255, 255, 255); text-color: black;"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="svg/LOGO.svg"
+              alt="logo"
+              class="img-fluid"
+              height="auto"
+              width="81.03"
+            />
+          </a>
+
+          
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="home.html">SOBRE MI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="habilidades.html">HABILIDADES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="proyectos.html">PROYECTOS</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" href="contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <main class="container">
+      <style>
+        html {
+          font-family: "Raleway", sans-serif;
+          justify-content: center;
+        }
+        /* Estilo personalizado para los cards circulares */
+        .circular-card {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          overflow: hidden;
+          margin: 20px;
+          position: relative;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+          transition: box-shadow 0.3s ease-in-out;
+        }
+  
+        /* Aplicar fondo de gradiante a los cards */
+        .circular-card::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          z-index: -1;
+          transition: background 0.3s ease-in-out;
+        }
+  
+        /* Estilo del texto dentro del card */
+        .card-text {
+          color: white;
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 1;
+          transition: color 0.3s ease-in-out;
+        }
+  
+        /* Cambia el color del texto y el fondo al pasar el ratón por encima */
+        .circular-card:hover .card-text {
+          color: #fff; /* Cambia al color deseado en hover */
+        }
+  
+        .circular-card:hover::before {
+          background: linear-gradient(
+            45deg,
+            #343333,
+            #171716
+          ); /* Cambia al gradiante deseado en hover */
+        }
+
+        
+  
+        /* Establecer fondos de gradiante diferentes para cada card */
+        .card1::before {
+          background: linear-gradient(45deg, #FFA720, #FCC166);
+        }
+  
+        .card2::before {
+          background: linear-gradient(45deg, #14A5AB, #12CFD0);
+        }
+  
+        .card3::before {
+          background: linear-gradient(45deg, #052D4C, #1A69A3);
+        }
+  
+        .card4::before {
+          background: linear-gradient(45deg, #FB4611, #FF6E54);
+        }
+  
+        .card5::before {
+          background: linear-gradient(45deg, #BF1741, #E92A5A);
+        }
+  
+        .card6::before {
+          background: linear-gradient(45deg, #837F7F, #D7D7D7);
+        }
+
+        .card7::before {
+          background: linear-gradient(45deg, #204F47, #3D8479);
+        }
+
+        .numero {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 200px;
+}
+
+.title{
+  font-family: "gravesend-sans", sans-serif;
+font-weight: 700;
+font-size: 90px;
+}
+
+.outline{
+  font-family: "gravesend-sans", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  stroke: #171716;
+  fill: none;
+}
+
+p{
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+}
+      </style>
+   
+  
+      <section class="container">
+        <section class="row">
+          <article class="col-12 col-sm-12 col-lg-12">
+            <img src="svg/02.svg" alt="habilidades">
+          </article>
+       </section>
+  <hr>
+
+            <section class="row">
+                <article class="col-12 col-lg-6">  
+                </article>
+
+                <article class="col-12 col-lg-6">
+                  <div class="title"> SOFTWARES</div>      
+          </article>
+              </section>
+              <br><br>
+
+              <section class="row">
+            <article class="col-12 col-sm-2 col-lg-2">
+                    <div class="circular-card card1">
+                        <div class="card-text">
+                            <h2>80%</h2>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                      </article>
+
+                      <article class="col-12 col-sm-2 col-lg-2">
+                        <br><br> <br>
+                      <h2>Ai</h2>
+                          </article>
+
+
+            <article class="col-12 col-sm-2 col-lg-2">
+                    <div class="circular-card card2">
+                        <div class="card-text">
+                            <h2>40%</h2>
+                        </div>
+                      </div>
+                      </article>
+
+                      <article class="col-12 col-sm-2 col-lg-2">
+                        <br><br> <br>
+                      <h2>Maya</h2>
+                          </article>
+  
+                      
+  
+            <article class="col-12 col-sm-2 col-lg-2">
+                      <div class="col-md-4">
+                    <div class="circular-card card3">
+                        <div class="card-text">
+                          <h2>50%</h2>
+                        </div>
+                      </div>
+                      </article>
+
+                      <article class="col-12 col-sm-2 col-lg-2">
+                        <br><br> <br>
+                      <h2>Ps</h2>
+                          </article>
+  
+                      <article class="col-12 col-sm-2 col-lg-2">
+                          <div class="circular-card card4">
+                              <div class="card-text">
+                                <h2>70%</h2>
+                              </div>
+                            </div>
+                            </article>
+
+                            <article class="col-12 col-sm-2 col-lg-2">
+                              <br><br> <br>
+                            <h2>Figma</h2>
+                                </article>
+  
+                            <article class="col-12 col-sm-2 col-lg-2">
+                                <div class="circular-card card5">
+                                    <div class="card-text">
+                                      <h2>40%</h2>
+                                    </div>
+                                  </div>
+                                  </article>
+
+                                  <article class="col-12 col-sm-2 col-lg-2">
+                                    <br><br> <br>
+                                  <h2>Id</h2>
+                                      </article>
+  
+                                  <article class="col-12 col-sm-2 col-lg-2">
+                                      <div class="circular-card card6">
+                                          <div class="card-text">
+                                            <h2>30%</h2>
+                                          </div>
+                                        </div>
+                                        </article>
+
+                                        <article class="col-12 col-sm-2 col-lg-2">
+                                          <br><br> <br>
+                                        <h2>Rhino</h2>
+                                            </article>
+  </section>
+
+  <br>
+  <hr>
+
+  <section class="row">
+    <article class="col-12 col-lg-6"> <img src="svg/cualidades.svg" alt="">
+    </article>
+
+    <article class="col-12 col-lg-6"> <img src="svg/habilidades.svg" alt="">
+</article>
+  </section>
+
+  <section class="row">
+<article class="col-12 col-lg-3">
+<img src="svg/c1.svg" alt="">
+  </article>
+
+  <article class="col-12 col-lg-3"> <p style="font-size: 22px">
+  <ul type="circle">
+    <br>
+  <li>Empática</li>
+  <br>
+  <li>Responsable</li>
+  <br>
+  <li>Creativa</li>
+</ul></p>
+</article>
+
+ 
+    <article class="col-12 col-lg-3">
+    <img src="svg/c2.svg" alt="">
+      </article>
+    
+      <article class="col-12 col-lg-3"> <p style="font-size: 22px">
+      <ul type="circle">
+        <br>
+      <li>Design Thinking</li>
+      <br>
+      <li>Conceptualización</li>
+      <br>
+      <li>Trabajo creativo</li>
+    </ul></article>
+    </p>
+      </section>
+
+      <br>
+
+      <section class="row">
+    <article class="col-12 col-lg-3">
+    <img src="svg/fortalezas.svg" alt="">
+      </article>
+    
+      <article class="col-12 col-lg-3"> <p>
+      <ul type="circle">
+      <li>Diseño editorial</li>
+      <br>
+      <li>Estrategias de comunicación</li>
+      <br>
+      <li>Diseño de marca</li>
+      <br>
+      <li>Diseño estratégico</li>
+      <br>
+    </ul></p>
+    </article>
+    
+     
+        <article class="col-12 col-lg-3">
+         </article>
+        
+          <article class="col-12 col-lg-3">  <img src="svg/c3.svg" alt="">
+          </article>
+          </section>
+          <br><br>
+          <br>
+          <hr>
+          
+    <section class="row">
+      <article class="col-12 col-lg-12"> <img src="imagenes/FORMACIÓN.svg" alt=""></article>
+    </section>
+
+    <section class="row">
+      <section class="row">
+        <article class="col-12 col-lg-3">
+        <img src="svg/c1.svg" alt="">
+          </article>
+        
+          <article class="col-12 col-lg-3"> 
+            <h3>EDUCACIÓN</h3>
+            <p style="font-size: 22px">
+          <ul type="circle">
+            <br>
+          <li>Estudiante de la Universidad La Salle</li>
+          <br>
+          <li>Diseñadora Gráfica y Digital</li>
+          <br>
+          <li>5° semestre</li>
+        </ul></p>
+        </article>
+
+        
+         
+            <article class="col-12 col-lg-3">
+            <img src="svg/c2.svg" alt="">
+              </article>
+            
+              <article class="col-12 col-lg-3"> 
+                <h3>CURSOS</h3>
+                <p style="font-size: 22px">
+              <ul type="circle">
+                <br>
+              <li>Argumentos para una buena selección tipográfica</li>
+              <br>
+              <li>Iluminación con flashes pr fotografías de producto</li>
+              <br>
+              <li>Trabajo creativo</li>
+            </ul></article>
+            </p>
+              </section>
+        
+              <br>
+
+    <section class="row">
+          <article class="col-12 col-lg-3">
+          <img src="svg/c1.svg" alt="">
+            </article>
+
+      <article class="col-12 col-lg-3"><h3>IDIOMAS</h3>
+        <p style="font-size: 22px">
+      <ul type="circle">
+        <br>
+      <li>Inglés (B1) </li>
+      <br>
+      <li>Español. Nativo </li>
+      <br>
+      <li>Francés (básico)</li>
+    </ul>
+    </p></article>
+    
+
+  <article class="col-12 col-lg-3">
+      </article>
+
+    </section>
+
+
+
+  <br><br>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

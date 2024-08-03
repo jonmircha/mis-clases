@@ -1,0 +1,69 @@
+:root {
+  --primario: #212121;
+  --secundario: #d4af78;
+  --terciario: #f0e7d6;
+  --fondo: #f5f2eb;
+}
+body {
+  background-color: var(--primario);
+}
+.acerca,
+.back-cabañas {
+  background-color: var(--fondo);
+}
+
+.back-contacto,
+.back-tienda {
+  background-color: var(--terciario);
+}
+.back-copy,
+.back-otros {
+  background-color: var(--primario);
+}
+.bg-dark {
+  background-color: var(--primario);
+}
+
+.btn {
+  background-color: var(--secundario);
+  border: none;
+}
+.btn:hover {
+  background-color: var(--primario);
+}
+.card {
+  background-color: var(--fondo);
+  border: none;
+}
+
+.navbar-brand img {
+  width: auto;
+  height: 3.5rem;
+}
+.nav-link {
+  color: var(--terciario);
+  font-size: 1.15rem;
+}
+.nav-link:hover {
+  color: var(--secundario);
+}
+
+.bg-cover {
+  background-image: url(img/Cover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+}
+.bg-formulario {
+  background-color: var(--fondo);
+}
+.border-secundario {
+  border-color: var(--secundario) !important;
+}
+
+.w-30 {
+  width: 30% !important;
+}
+.w-40 {
+  width: 40% !important;
+}

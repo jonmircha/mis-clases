@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Diferentes Casos de la Grid de Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1>Diferentes Casos de la Grid de Bootstrap</h1>
+    <h2>Caso 1: Cambiar el orden de los elementos del Grid</h2>
+    <div class="container">
+      <section class="row">
+        <article class="col-12 col-lg-6">
+          <h2>Invest, trade and send cryptos</h2>
+        </article>
+        <article class="col-12 col-lg-6">
+          <img
+            class="img-fluid"
+            src="https://bitso.com/_next/image.jpg?url=%2F_next%2Fstatic%2Fmedia%2Fconsumer-1-br.53ea4ed6.png&w=640&q=100"
+            alt="Imagen 1"
+          />
+        </article>
+      </section>
+      <section class="row">
+        <article class="col-12 col-lg-6 order-lg-1">
+          <h2>Buying low and selling high just got easier</h2>
+        </article>
+        <article class="col-12 col-lg-6">
+          <img
+            class="img-fluid"
+            src="https://bitso.com/_next/image.jpg?url=%2F_next%2Fstatic%2Fmedia%2Fconsumer-2-us.55294aab.png&w=640&q=100"
+            alt="Imagen 2"
+          />
+        </article>
+      </section>
+      <section class="row">
+        <article class="col-12 col-lg-6">
+          <h2>Buy your favorite crypto automatically</h2>
+        </article>
+        <article class="col-12 col-lg-6">
+          <img
+            class="img-fluid"
+            src="https://bitso.com/_next/image.jpg?url=%2F_next%2Fstatic%2Fmedia%2Fconsumer-3-br.5b6a243a.png&w=640&q=100"
+            alt="Imagen 3"
+          />
+        </article>
+      </section>
+    </div>
+    <br /><br /><br /><br /><br />
+    <h2>Caso 2: Necesito hacer columnas que no sean divisibles entre 12</h2>
+    <div class="container">
+      <section class="row">
+        <article class="border bg-secondary col-12 col-lg">Elemento 1</article>
+        <article class="border bg-secondary col-12 col-lg">Elemento 2</article>
+        <article class="border bg-secondary col-12 col-lg">Elemento 3</article>
+        <article class="border bg-secondary col-12 col-lg">Elemento 4</article>
+        <article class="border bg-secondary col-12 col-lg">Elemento 5</article>
+      </section>
+      <section class="row">
+        <article class="border bg-success col-12 col-lg-3">Elemento 6</article>
+        <article class="border bg-secondary col-12 col-lg">Elemento 7</article>
+        <article class="border bg-secondary col-12 col-lg">Elemento 8</article>
+        <article class="border bg-secondary col-12 col-lg">Elemento 9</article>
+        <article class="border bg-secondary col-12 col-lg">Elemento 10</article>
+      </section>
+      <section class="row">
+        <article class="border bg-secondary col-12 col-lg">Elemento 11</article>
+        <article class="border bg-secondary col-12 col-lg">Elemento 12</article>
+        <article class="border bg-secondary col-12 col-lg">Elemento 13</article>
+        <article class="border bg-secondary col-12 col-lg">Elemento 14</article>
+        <article class="border bg-secondary col-12 col-lg">Elemento 15</article>
+      </section>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <h2>Caso 3: Dejar columnas vacías</h2>
+    <div class="container">
+      <section class="row">
+        <article class="border bg-warning col-12 col-lg-4">Elemento 1</article>
+        <article class="border bg-warning col-12 col-lg-4 offset-lg-4">
+          Elemento 2
+        </article>
+        <article class="border bg-warning col-12 col-lg-4 offset-lg-2">
+          Elemento 3
+        </article>
+        <article class="border bg-warning col-12 col-lg-4 offset-lg-2">
+          Elemento 4
+        </article>
+      </section>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

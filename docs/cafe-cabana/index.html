@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Café La Cabaña</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+
+      .font-bree {
+        font-family: "Bree Serif", serif;
+      }
+      .color-primario{
+        color: #212121;
+      }
+      .color-secundario{
+        color: #d4af78;
+      }
+      .color-terciario{
+        color: #f0e7d6;
+      }
+      .color-fondo{
+        color: #f5f2eb;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img src="img/cabana-blanco.png" alt="Cafe La Cabaña"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="font-bree navbar-nav ms-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tienda">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cabañas">Cabañas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <div class="min-vh-100 bg-cover">
+      <section class="row">
+        <article class="align-items-center justify-content-center col-12 col-md-12 col-lg-6 m-auto w-50">
+          <img src="img/la-cabana.png" alt="La cabaña" class="img-fluid" />
+          <p class="text-center text-white">
+            Nos entusiasma esforzarnos para que nuestro producto, servicio y
+            establecimiento sean del total agrado de nuestros clientes, lo que
+            nos hace ser ya una tradición.
+          </p>
+        </article>
+      </div>
+      <div class="acerca py-4">
+        <div class="container"> 
+        <section class="row"> 
+        <article class="text-center col-12 my-3">
+          <h2 class="font-bree border-bottom border-3 border-secundario pb-2 w-30 m-auto mb-3">
+            Acerca de tu cáfe
+          </h2>
+        </article>
+        <article class="text-end col-12 col-md-4 col-lg-4 px-5 py-3">
+          <h3 class="font-bree color-secundario">Grano Mexicano</h3>
+          <p class="ms-4">Son famosos por producir uno de los mejores cafés del mundo.</p>
+          <h3 class="font-bree color-secundario mt-5">Tipos de Grano</h3>
+          <p class="ms-4">
+            Arábigo–Aroma perfumado, sabor delicado y dulce, color rojizo o
+            dorado.
+          </p>
+        </article>
+        <article class="col-12 col-md-4 col-lg-4 mb-3">
+          <img src="img/vaso-cafe.png" alt="Vaso Cafe" class="img-fluid" />
+        </article>
+        <article class="col-12 col-md-4 col-lg-4 px-5 py-3">
+          <h3 class="font-bree color-secundario">Saludable</h3>
+          <p class="me-4">Contiene antioxidantes, disminuye enfermedades.</p>
+          <h3 class="font-bree color-secundario mt-5">Ecologico</h3>
+          <p class="me-4">El vaso es 100% reciclable, libres de químicos y BPA.</p>
+        </article>
+        </section>
+      </div>
+      </div>
+      <div class="back-tienda py-4">
+        <div id="tienda" class="container py-4"> 
+          <section class="row">
+        <article class="text-center col-12 my-3">
+          <h2 class="font-bree border-bottom border-3 border-secundario pb-2 w-25 mx-auto">Tienda</h2>
+          <p>
+            Te presentamos nuestra variedad de café, para deleitar tu paladar
+          </p>
+        </article>
+        <article class="col-12 col-md-6 col-lg-3 mb-5">
+          <div class="card align-items-center justify-content-center p-3 mx-auto" style="width: 18rem;">
+            <img src="img/1.png" class="card-img-top " style="width: 14rem;"alt="Prima Lavado">
+            <div class="card-body">
+              <h5 class="card-title font-bree text-center">Prima Lavado</h5>
+              <p class="card-text text-center">Tostado Medio ó Tostado Francés</p>
+              <h5 class="card-text font-bree text-center">$400</h5>
+              <a href="#" class="btn btn-primary px-5">Comprar</a>
+              <img src="img/corazon.png" class="card-img-bottom m-2" style="width: 2rem;"alt="Favorito">
+            </div>
+          </div>
+        </article>
+        <article class="col-12 col-md-6 col-lg-3 mb-5">
+          <div class="card align-items-center justify-content-center p-3 mx-auto" style="width: 18rem;">
+            <img src="img/2.png" class="card-img-top " style="width: 14rem;"alt="Mezcla de la casa">
+            <div class="card-body">
+              <h5 class="card-title font-bree text-center">Mezcla de la casa</h5>
+              <p class="card-text text-center">Tostado medio y tostado Francés al 50%</p>
+              <h5 class="card-text font-bree text-center">$480</h5>
+              <a href="#" class="btn btn-primary px-5">Comprar</a>
+              <img src="img/corazon.png" class="card-img-bottom m-2" style="width: 2rem;"alt="Favorito">
+            </div>
+          </div>
+          </article>
+          <article class="col-12 col-md-6 col-lg-3 mb-5">
+            <div class="card align-items-center justify-content-center p-3 mx-auto" style="width: 18rem;">
+              <img src="img/3.png" class="card-img-top " style="width: 14rem;"alt="Orgánico">
+              <div class="card-body">
+                <h5 class="card-title font-bree text-center">Orgánico</h5>
+                <p class="card-text text-center">Chiapas, Certificado</p>
+                <h5 class="card-text font-bree text-center">$350</h5>
+                <a href="#" class="btn btn-primary px-5">Comprar</a>
+                <img src="img/corazon.png" class="card-img-bottom m-2" style="width: 2rem;"alt="Favorito">
+              </div>
+            </div>
+            </article>
+          <article class="col-12 col-md-6 col-lg-3 mb-5">
+            <div class="card align-items-center justify-content-center p-3 mx-auto" style="width: 18rem;">
+              <img src="img/4.png" class="card-img-top " style="width: 14rem;"alt="Descafeinado">
+              <div class="card-body">
+                <h5 class="card-title font-bree text-center">Descafeinado</h5>
+                <p class="card-text text-center">Arábigo Coatepec, Calidad de Exportación</p>
+                <h5 class="card-text font-bree text-center">$380</h5>
+                <a href="#" class="btn btn-primary px-5">Comprar</a>
+                <img src="img/corazon.png" class="card-img-bottom m-2" style="width: 2rem;"alt="Favorito">
+              </div>
+            </div>
+          </article>
+      </section>
+    </div>
+    </div>
+    <div class="back-otros py-4">
+      <div id="otros" class="container py-4"> 
+        <section class="row">
+      <article class="text-center col-12 my-3">
+        <h2 class="font-bree text-white border-bottom border-3 pb-3 border-secundario w-30 m-auto mb-4">Otros productos</h2>
+      </article>
+      <article class="col-12 col-md-6 col-lg-3 mb-5">
+        <div class="card align-items-center justify-content-center p-3 mx-auto" style="width: 18rem;">
+          <img src="img/vaso.png" class="card-img-top " style="width: 14rem;"alt="Vaso">
+          <div class="card-body">
+            <h5 class="card-title font-bree text-center">Vaso</h5>
+            <p class="card-text text-center">Vaso térmico con popote de metal 20 oz.</p>
+            <h5 class="card-text font-bree text-center">$300</h5>
+            <a href="#" class="btn btn-primary px-5">Comprar</a>
+            <img src="img/corazon.png" class="card-img-bottom m-2" style="width: 2rem;"alt="Favorito">
+          </div>
+        </div>
+      </article>
+      <article class="col-12 col-md-6 col-lg-3 mb-5">
+        <div class="card align-items-center justify-content-center p-3 mx-auto" style="width: 18rem;">
+          <img src="img/taza.png" class="card-img-top " style="width: 14rem;" alt="Taza">
+          <div class="card-body">
+            <h5 class="card-title font-bree text-center">Taza</h5>
+            <p class="card-text text-center">Taza de peltre nregra de 
+              10 oz.</p>
+            <h5 class="card-text font-bree text-center">$170</h5>
+            <a href="#" class="btn btn-primary px-5">Comprar</a>
+            <img src="img/corazon.png" class="card-img-bottom m-2" style="width: 2rem;"alt="Favorito">
+          </div>
+        </div>
+        </article>
+        <article class="col-12 col-md-6 col-lg-3 mb-5">
+          <div class="card align-items-center justify-content-center p-3 mx-auto" style="width: 18rem;">
+            <img src="img/bolsa.png" class="card-img-top " style="width: 14rem;"alt="Tote bag">
+            <div class="card-body">
+              <h5 class="card-title font-bree text-center">Tote bag</h5>
+              <p class="card-text text-center">Bolsa reutilizable de manta de 30x45cm</p>
+              <h5 class="card-text font-bree text-center">$100</h5>
+              <a href="#" class="btn btn-primary px-5">Comprar</a>
+              <img src="img/corazon.png" class="card-img-bottom m-2" style="width: 2rem;"alt="Favorito">
+            </div>
+          </div>
+        </article>
+        <article class="col-12 col-md-6 col-lg-3 mb-5">
+          <div class="card align-items-center justify-content-center p-3 mx-auto" style="width: 18rem;">
+            <img src="img/posavaso.png" class="card-img-top " style="width: 14rem;"alt="Posavaso">
+            <div class="card-body">
+              <h5 class="card-title font-bree text-center">Posavaso</h5>
+              <p class="card-text text-center">Posavaso de corcho para café</p>
+              <h5 class="card-text font-bree text-center">$50</h5>
+              <a href="#" class="btn btn-primary px-5">Comprar</a>
+              <img src="img/corazon.png" class="card-img-bottom m-2" style="width: 2rem;"alt="Favorito">
+            </div>
+          </div>
+        </article>
+    </section>
+  </div>
+  </div>
+  <div class="back-cabañas">
+    <div id="cabañas" class="container">
+      <section class="row">
+        <article class="col-12 col-lg-6" style="width: 35rem;">
+          <img
+            src="img/cabana-negra.png"
+            alt=""class="img-fluid"/>
+        </article>
+        <article class="col-12 col-lg-6 mt-5 align-items-center justify-content-center">
+          <section class="row">
+            <article class="text-center col-12">
+              <h2 class="font-bree border-bottom border-3 border-secundario pb-2 w-30 mx-auto">Cabañas</h2>
+            </article>
+            <article class="col-6 col-lg-6 mx-auto mb-5 align-items-center justify-content-center">
+              <h4 class="font-bree mt-5"><span class="material-symbols-outlined color-secundario me-2">
+                location_on
+                </span>Centro</h4>
+              <p>Juárez 303-A Av. 27 de Febrero y Reforma Col. Centro</p>
+              <h4 class="font-bree mt-4"><span class="material-symbols-outlined color-secundario me-2">
+                location_on
+                </span>Plaza Crystal</h4>
+              <p>Local 1 Int. de la Plaza Crystal</p>
+              <h4 class="font-bree mt-4"><span class="material-symbols-outlined color-secundario me-2">
+                location_on
+                </span>Plaza Américas</h4>
+              <p>Isla E50 Plaza Las Américas</p>
+            </article>
+            <article class="col-6 col-lg-6 mx-auto mb-5 align-items-center justify-content-center">
+              <h4 class="font-bree mt-5"><span class="material-symbols-outlined color-secundario me-2">
+                location_on
+                </span>Galerias</h4>
+              <p>1405 L 154 Centro Comercial Tabasco 2000</p>
+              <h4 class="font-bree mt-4"><span class="material-symbols-outlined color-secundario me-2">
+                location_on
+                </span>Plaza Olmeca</h4>
+              <p>1310 L 7 Y 8, Plaza Olmeca</p>
+              <h4 class="font-bree mt-4"><span class="material-symbols-outlined color-secundario me-2">
+                location_on
+                </span>Europlaza</h4>
+              <p>Isla 10 dentro de Eurolaza</p>
+            </article>
+          </section>
+        </article>
+      </section>
+    </div>
+  </div>
+
+  <div class="back-contacto py-4">
+    <div id="contacto" class="container"> 
+  <section class="row">
+   <article class="col-12 col-md-12 col-lg-6 my-5">
+    <form class="bg-formulario py-4 ms-5">
+   <div class="mb-3 d-grid gap-2 col-10 mx-auto">
+     <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+     <input type="text" class="form-control border-secundario border-2 bg-formulario" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="mb-3 d-grid gap-2 col-10 mx-auto">
+    <label for="exampleFormControlInput1" class="form-label">Correo</label>
+    <input type="email" class="form-control border-secundario border-2 bg-formulario" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="mb-3 d-grid gap-2 col-10 mx-auto">
+    <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+    <textarea class="form-control border-secundario border-2 bg-formulario" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-primary" type="button">Enviar</button>
+  </div>
+</form>
+</article>
+<article class="col-12 col-md-12 col-lg-6 mx-auto mt-3 w-40">
+      <h2 class="font-bree border-bottom border-3 border-secundario pb-2 w-30 m-auto text-center">Contacto</h2>
+      <p><span class="material-symbols-outlined color-secundario me-2">
+        location_on
+        </span>Prolongación Paseo Tabasco, Centro Tabasco C.P. 86035</p></li>
+          <p><i class="fa-solid fa-phone color-secundario me-2"></i>99 32 12 06 54</p>
+          <p class="font-bree">Síguenos</p>
+        
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a href="#" class="text-dark"><i class="fa-brands fa-facebook color-secundario"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark"><i class="fa-brands fa-instagram color-secundario"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark"><i class="fa-brands fa-tiktok color-secundario"></i></i></a>
+            </li>
+          </ul>
+        
+    </article>
+  </section>
+</article>
+</div>
+</div>
+
+  </body>
+  <footer>
+  <div class="back-copy">
+    <article class="text-center text-light align-items-center justify-content-center col-12 pt-3">
+      <p>Café La Cabaña© Copy Right</p>
+    </article>
+  </div>
+  </footer>
+</html>

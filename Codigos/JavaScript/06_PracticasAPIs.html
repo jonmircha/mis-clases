@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practicando con JSON, AJAX y APIs</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/apis.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+  </head>
+  <body>
+    <h1 class="sticky-title">
+      Practicando con <i>APIs</i>, <i>JSON</i> y <i>AJAX</i>
+    </h1>
+    <section class="full-screen">
+      <h2>Interactuando con el <i>API</i> de <i>GitHub</i></h2>
+      <select id="usuarios-github">
+        <option value="">- - -</option>
+        <option value="jonmircha">Jonathan</option>
+        <option value="lauraolmos">Laura</option>
+        <option value="nachorp">Nacho</option>
+      </select>
+      <br /><br />
+      <article id="info-github"></article>
+    </section>
+    <section class="full-screen">
+      <h2>Envío de Formularios</h2>
+      <form
+        class="contact-form"
+        action="https://formsubmit.co/your@email.com"
+        method="POST"
+        target="_blank"
+      >
+        <div class="form-data">
+          <label class="form-label" for="name">Nombre:</label>
+          <input
+            type="text"
+            class="form-control"
+            name="name"
+            id="name"
+            placeholder="Tu nombre"
+            title="Nombre sólo acepta letras y espacios en blanco"
+            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+            required
+          />
+        </div>
+        <div class="form-data">
+          <label class="form-label" for="email">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            id="email"
+            placeholder="tu.email@ejemplo.com"
+            title="Email incorrecto"
+            pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+            required
+          />
+        </div>
+        <div class="form-data">
+          <label class="form-label" for="subject">Asunto:</label>
+          <input
+            type="text"
+            class="form-control"
+            name="subject"
+            id="subject"
+            placeholder="Asunto a tratar"
+            title="El Asunto es requerido"
+            required
+          />
+        </div>
+        <div class="form-data">
+          <label class="form-label" for="comments">Comentarios:</label>
+          <textarea
+            class="form-control"
+            name="comments"
+            id="comments"
+            rows="5"
+            placeholder="Tus comentarios"
+            title="Tu comentario no debe exceder los 255 caracteres"
+            data-pattern="^.{1,255}$"
+            required
+          ></textarea>
+        </div>
+        <div class="form-data">
+          <span class="loader none"></span>
+          <aside class="form-response none">
+            <p>Los datos han sido enviados</p>
+          </aside>
+        </div>
+        <div class="form-data">
+          <input class="form-btn" type="submit" value="Enviar" />
+        </div>
+      </form>
+    </section>
+    <section class="full-screen">
+      <h2><i>Pokemons</i></h2>
+      <nav class="links"></nav>
+      <article class="pokemons"></article>
+    </section>
+    <section class="full-screen">
+      <h2>Buscador de Shows de TV</h2>
+      <input type="search" id="search" placeholder="Buscar shows de TV..." />
+      <article class="shows"></article>
+    </section>
+    <section class="full-screen">
+      <h2><i>WordPress REST API</i></h2>
+      <p>
+        Introduce el dominio de un sitio hecho en <i>WordPress</i> para ver los
+        últimos artículos publicados.
+      </p>
+      <p>Al terminar de escribir presiona Enter.</p>
+      <input type="url" id="wp-site" placeholder="https://example.com" />
+      <article class="wp-posts"></article>
+    </section>
+    <script src="js/apis-practicas.js" type="module"></script>
+  </body>
+</html>

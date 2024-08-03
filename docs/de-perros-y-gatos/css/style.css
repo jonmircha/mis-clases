@@ -1,0 +1,99 @@
+/* ********** Custom Properties ********** */
+
+:root {
+  --first-color: #00cac1;
+  --second-color: #ffc32b;
+  --third-color: #f0fcfb;
+  --fourth-color: #fff6e0;
+}
+
+/* ********** Reset HTML ********** */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+  font-size: clamp(1rem, 1rem + 0.5vw, 3rem);
+}
+
+[id] {
+  scroll-margin-top: 2ex;
+}
+
+/* ********** Utilities ********** */
+
+.bg-first {
+  background-color: var(--first-color) !important;
+}
+
+.bg-second {
+  background-color: var(--second-color) !important;
+}
+
+.bg-third {
+  background-color: var(--third-color) !important;
+}
+
+.bg-fourth {
+  background-color: var(--fourth-color) !important;
+}
+
+.gradient-green {
+  background-image: linear-gradient(180deg, #00cac1, #fff6e0);
+}
+
+.gradient-yellow {
+  background-image: linear-gradient(135deg, #ff912b, #ffc32b);
+}
+
+.text-first {
+  color: var(--first-color) !important;
+}
+
+.text-second {
+  color: var(--second-color) !important;
+}
+
+.text-third {
+  color: var(--third-color) !important;
+}
+
+.text-fourth {
+  color: var(--fourth-color) !important;
+}
+
+/* ********** Sites Styles ********** */
+
+.footer {
+  background-color: var(--first-color);
+}
+
+.icon-emergency {
+  width: auto;
+  height: 3rem;
+}
+
+.social-media a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+.social-media a:hover {
+  color: var(--second-color);
+}
+
+/* ********** Bootstrap Styles ********** */
+
+.nav-link {
+  color: var(--first-color) !important;
+  font-weight: 600;
+  font-size: 1.25rem;
+  transition: all 0.5s ease-out;
+}
+
+.nav-link:hover {
+  color: var(--second-color) !important;
+}

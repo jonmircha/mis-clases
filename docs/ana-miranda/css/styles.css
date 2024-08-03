@@ -1,0 +1,270 @@
+h1 {
+  text-decoration: underline;
+}
+
+.card-container {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.card-container::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #88a79c 0%, #496252 100%);
+  transform: translateY(50px);
+  transition: all 10s cubic-bezier(0.23, 1, 0.32, 1);
+  filter: blur(20px);
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  overflow: hidden;
+  font-family: "Raleway", sans-serif;
+}
+
+.card .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  color: #e8e8e8;
+  padding: 20px 24px;
+  line-height: 1.5;
+  opacity: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.card .content .heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.card:hover .content {
+  opacity: 1;
+  transform: translateY(0);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-45deg, #496252 0%, #88a79c 100%);
+  transition:
+    scale 0.6s,
+    rotate 0.6s,
+    filter 1s;
+  font-family: "Raleway", sans-serif;
+}
+
+.card:hover .img-content svg {
+  fill: transparent;
+}
+
+h2 {
+  font-family: "Raleway"; sans-serif;
+  font-weight: 300px;
+}
+
+.h1 {
+  font-family: "Raleway"; sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+}
+
+.numero {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 150px;
+}
+
+.title{
+  font-family: "gravesend-sans", sans-serif;
+font-weight: 700;
+font-size: 90px;
+}
+
+
+.interactive-element {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  cursor: pointer;
+}
+
+.outer-circle {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  width: 110%;
+  height: 110%;
+  border: 2px solid #282936;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.inner-circle {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border-radius: 50%;
+  background: radial-gradient(#7cc29d, #1c8a81);
+  transition: background 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+.interactive-element:hover .inner-circle {
+  background: radial-gradient(#1d3897, #1f2d57);
+}
+
+.inicial{
+  font-family: "gravesend-sans", sans-serif;
+font-weight: 700;
+font-size: 200px;
+  
+}
+
+p{
+  font-family: "Raleway" sans-serif;
+  font-size: 22px;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: "Raleway", sans-serif;
+}
+
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button:hover .circle {
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  background: linear-gradient(-45deg, #88a79c 0%, #496252 100%);
+  transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+  color: linear-gradient(-45deg, #88a79c 0%, #496252 100%);
+}
+
+h3{
+  font-family:'Raleway', sans-serif;
+  font-size: 30px;
+}
+
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 272px;
+	list-style: none;
+}
+
+.slider img {
+	width: 272px;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
