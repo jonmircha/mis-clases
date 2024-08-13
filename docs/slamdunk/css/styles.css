@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+/* ********** VARIBLES ********** */
+
+/* ********** ETIQUETAS HTML ********** */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  background-color: #eee;
+  color: #222;
+}
+
+a {
+  color: #f00;
+  transition: all 0.3s ease-out;
+}
+
+a:hover {
+  color: #999;
+}
+
+img,
+iframe {
+  max-width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+/* ********** SECCIONES o COMPONENTES de UI ********** */
+
+/* ********** CLASES UTILITARIAS ********** */
