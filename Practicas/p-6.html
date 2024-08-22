@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de Tienda en Línea</title>
+    <style>
+      .producto {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 5px;
+      }
+      .carrito {
+        border: 2px solid #444;
+        padding: 10px;
+        margin-top: 20px;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Simulador de Tienda en Línea</h1>
+    <div id="productos">
+      <div class="producto" data-nombre="Camiseta" data-precio="15">
+        Camiseta - $15
+      </div>
+      <div class="producto" data-nombre="Pantalones" data-precio="25">
+        Pantalones - $25
+      </div>
+      <div class="producto" data-nombre="Zapatos" data-precio="50">
+        Zapatos - $50
+      </div>
+      <div class="producto" data-nombre="Sombrero" data-precio="10">
+        Sombrero - $10
+      </div>
+    </div>
+    <div id="carrito" class="carrito">
+      <h2>Carrito de Compras</h2>
+      <ul id="listaCarrito"></ul>
+      <p>Total: $<span id="totalCarrito">0</span></p>
+      <button id="btnComprar">Comprar</button>
+    </div>
+    <div id="mensajeCompra" class="hidden">
+      <h2>¡Compra realizada con éxito!</h2>
+      <p>Gracias por su compra.</p>
+    </div>
+    <script src="p-6.js"></script>
+  </body>
+</html>

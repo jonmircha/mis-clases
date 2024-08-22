@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prácticas</title>
+  </head>
+  <body>
+    <script>
+      // Uno
+      const productos = [
+        { nombre: "Camiseta", precio: 15, stock: 10 },
+        { nombre: "Pantalones", precio: 25, stock: 8 },
+        { nombre: "Zapatos", precio: 50, stock: 5 },
+        { nombre: "Sombrero", precio: 10, stock: 20 },
+      ];
+
+      // Dos
+      let carrito = [];
+
+      function agregarAlCarrito(productoNombre, cantidad) {
+        for (let producto of productos) {
+          if (producto.nombre === productoNombre) {
+            if (producto.stock >= cantidad) {
+              carrito.push({
+                nombre: productoNombre,
+                cantidad: cantidad,
+                precio: producto.precio,
+              });
+              producto.stock -= cantidad;
+              console.log(
+                `${cantidad} ${productoNombre}(s) agregado(s) al carrito.`
+              );
+            } else {
+              console.log(`No hay suficiente stock de ${productoNombre}.`);
+            }
+            return;
+          }
+        }
+        console.log(`El producto ${productoNombre} no existe.`);
+      }
+
+      // Tres
+      function calcularTotal() {
+        let total = 0;
+        for (let item of carrito) {
+          total += item.precio * item.cantidad;
+        }
+        return total;
+      }
+
+      // Cuatro
+      function aplicarDescuento(total) {
+        if (total > 100) {
+          return total * 0.9; // Aplica un 10% de descuento
+        }
+        return total;
+      }
+
+      // Cinco
+      function procesarCompra() {
+        console.log("Procesando compra...");
+        setTimeout(() => {
+          let total = calcularTotal();
+          total = aplicarDescuento(total);
+          console.log(`Compra completada. Total a pagar: $${total.toFixed(2)}`);
+        }, 3000);
+      }
+
+      // Seis
+      agregarAlCarrito("Camiseta", 2);
+      agregarAlCarrito("Zapatos", 1);
+      procesarCompra();
+
+      // Siete
+      // Eliminar Productos: Implementa una función que permita al usuario eliminar productos del carrito.
+      function eliminarDelCarrito(productoNombre) {
+        for (let i = 0; i < carrito.length; i++) {
+          if (carrito[i].nombre === productoNombre) {
+            let cantidad = carrito[i].cantidad;
+
+            // Devolver el stock al inventario
+            for (let producto of productos) {
+              if (producto.nombre === productoNombre) {
+                producto.stock += cantidad;
+                break;
+              }
+            }
+
+            // Eliminar el producto del carrito
+            carrito.splice(i, 1);
+            console.log(`${productoNombre} ha sido eliminado del carrito.`);
+            return;
+          }
+        }
+        console.log(`El producto ${productoNombre} no está en el carrito.`);
+      }
+
+      //agregarAlCarrito("Camiseta", 2);
+      //agregarAlCarrito("Zapatos", 1);
+      //eliminarDelCarrito("Camiseta");
+      //procesarCompra();
+
+      //Ocho
+      // Simular espera para confirmar la compra: Usa temporizadores para mostrar un mensaje que indique el tiempo restante para confirmar la compra (por ejemplo, "Compra confirmada en 3, 2, 1...").
+      function mostrarCuentaRegresiva(segundos) {
+        let contador = segundos;
+        const intervalo = setInterval(() => {
+          if (contador > 0) {
+            console.log(`Compra confirmada en ${contador}...`);
+            contador--;
+          } else {
+            clearInterval(intervalo);
+            procesarCompra(); // Una vez que la cuenta regresiva llegue a 0, procesamos la compra.
+          }
+        }, 1000); // Intervalo de 1 segundo (1000 milisegundos)
+      }
+
+      //agregarAlCarrito("Camiseta", 2);
+      //agregarAlCarrito("Zapatos", 1);
+      //mostrarCuentaRegresiva(5); // Inicia la cuenta regresiva desde 5 segundos
+    </script>
+  </body>
+</html>
