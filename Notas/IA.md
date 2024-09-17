@@ -79,6 +79,7 @@ La inteligencia artificial se basa en el uso de algoritmos y modelos matemático
 - https://brandmark.io/
 - https://brandmark.io/tools/
 - https://app.brandmark.io/v3/
+- https://www.recraft.ai/
 
 ### _UI_
 
@@ -106,6 +107,7 @@ La inteligencia artificial se basa en el uso de algoritmos y modelos matemático
 - https://haiper.ai/
 - https://noisee.ai/
 - https://pixverse.ai/
+- https://gencraft.com/
 
 ### Presentaciones
 

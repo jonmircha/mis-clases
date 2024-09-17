@@ -68,9 +68,57 @@
       }
 
       // Seis
+      //agregarAlCarrito("Camiseta", 2);
+      //agregarAlCarrito("Zapatos", 1);
+      //procesarCompra();
+
+      // Siete
+      // Eliminar Productos: Implementa una función que permita al usuario eliminar productos del carrito.
+      function eliminarDelCarrito(productoNombre) {
+        for (let i = 0; i < carrito.length; i++) {
+          if (carrito[i].nombre === productoNombre) {
+            let cantidad = carrito[i].cantidad;
+
+            // Devolver el stock al inventario
+            for (let producto of productos) {
+              if (producto.nombre === productoNombre) {
+                producto.stock += cantidad;
+                break;
+              }
+            }
+
+            // Eliminar el producto del carrito
+            carrito.splice(i, 1);
+            console.log(`${productoNombre} ha sido eliminado del carrito.`);
+            return;
+          }
+        }
+        console.log(`El producto ${productoNombre} no está en el carrito.`);
+      }
+
       agregarAlCarrito("Camiseta", 2);
       agregarAlCarrito("Zapatos", 1);
-      procesarCompra();
+      eliminarDelCarrito("Camiseta");
+      //procesarCompra();
+
+      //Ocho
+      // Simular espera para confirmar la compra: Usa temporizadores para mostrar un mensaje que indique el tiempo restante para confirmar la compra (por ejemplo, "Compra confirmada en 3, 2, 1...").
+      function mostrarCuentaRegresiva(segundos) {
+        let contador = segundos;
+        const intervalo = setInterval(() => {
+          if (contador > 0) {
+            console.log(`Compra confirmada en ${contador}...`);
+            contador--;
+          } else {
+            clearInterval(intervalo);
+            procesarCompra(); // Una vez que la cuenta regresiva llegue a 0, procesamos la compra.
+          }
+        }, 1000); // Intervalo de 1 segundo (1000 milisegundos)
+      }
+
+      //agregarAlCarrito("Camiseta", 2);
+      //agregarAlCarrito("Zapatos", 1);
+      mostrarCuentaRegresiva(5); // Inicia la cuenta regresiva desde 5 segundos
     </script>
   </body>
 </html>
