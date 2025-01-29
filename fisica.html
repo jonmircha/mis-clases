@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Péndulo Simple</title>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="pendulumCanvas" width="800" height="600"></canvas>
+    <script>
+      const canvas = document.getElementById("pendulumCanvas");
+      const ctx = canvas.getContext("2d");
+
+      let angle = Math.PI / 4; // Ángulo inicial
+      let angleVelocity = 0; // Velocidad angular
+      let angleAcceleration = 0; // Aceleración angular
+      const length = 200; // Longitud del péndulo
+      const gravity = 0.4; // Gravedad
+
+      function drawPendulum() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        const originX = canvas.width / 2;
+        const originY = 100;
+        const pendulumX = originX + length * Math.sin(angle);
+        const pendulumY = originY + length * Math.cos(angle);
+
+        ctx.beginPath();
+        ctx.moveTo(originX, originY);
+        ctx.lineTo(pendulumX, pendulumY);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(pendulumX, pendulumY, 20, 0, Math.PI * 2);
+        ctx.fillStyle = "blue";
+        ctx.fill();
+      }
+
+      function updatePendulum() {
+        angleAcceleration = ((-1 * gravity) / length) * Math.sin(angle);
+        angleVelocity += angleAcceleration;
+        angle += angleVelocity;
+
+        drawPendulum();
+        requestAnimationFrame(updatePendulum);
+      }
+
+      updatePendulum();
+    </script>
+  </body>
+</html>

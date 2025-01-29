@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="gameCanvas"
+      width="800"
+      height="400"
+      style="border: 1px solid black"
+    ></canvas>
+    <script>
+      /* const canvas = document.getElementById("gameCanvas");
+      const ctx = canvas.getContext("2d");
+
+      // Dibujar un rectángulo inicial
+      ctx.fillStyle = "blue";
+      ctx.fillRect(50, 50, 100, 100);
+
+      let x = 0;
+
+      function gameLoop() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "blue";
+        ctx.fillRect(x, 50, 100, 100);
+        x += 2; // Mover el rectángulo a la derecha
+
+        requestAnimationFrame(gameLoop);
+      }
+
+      gameLoop();
+
+      let playerX = 50;
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowRight") playerX += 10;
+        if (event.key === "ArrowLeft") playerX -= 10;
+      });
+
+      function updateGame() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "green";
+        ctx.fillRect(playerX, 300, 50, 50);
+
+        requestAnimationFrame(updateGame);
+      }
+
+      updateGame();
+
+      function isColliding(rect1, rect2) {
+        return (
+          rect1.x < rect2.x + rect2.width &&
+          rect1.x + rect1.width > rect2.x &&
+          rect1.y < rect2.y + rect2.height &&
+          rect1.y + rect1.height > rect2.y
+        );
+      }
+
+      // Ejemplo de uso:
+      const player = { x: 50, y: 300, width: 50, height: 50 };
+      const obstacle = { x: 200, y: 300, width: 50, height: 50 };
+
+      if (isColliding(player, obstacle)) {
+        console.log("Colisión detectada");
+      } */
+
+      const canvas = document.getElementById("gameCanvas");
+      const ctx = canvas.getContext("2d");
+
+      // Dibujar un rectángulo inicial
+      ctx.fillStyle = "blue";
+      ctx.fillRect(50, 50, 100, 100);
+
+      let x = 0;
+
+      let obstacles = [];
+
+      function generateObstacle() {
+        obstacles.push({ x: canvas.width, y: 300, width: 50, height: 50 });
+      }
+
+      setInterval(generateObstacle, 2000);
+
+      let score = 0;
+
+      function updateScore() {
+        score += 1;
+        ctx.fillStyle = "black";
+        ctx.fillText(`Puntuación: ${score}`, 10, 20);
+      }
+
+      let gameState = "start";
+
+      function updateGameState() {
+        if (gameState === "start") {
+          ctx.fillText("Presiona Enter para empezar", 300, 200);
+        } else if (gameState === "playing") {
+          // Actualizar lógica del juego
+        } else if (gameState === "gameover") {
+          ctx.fillText("Game Over", 300, 200);
+        }
+      }
+    </script>
+  </body>
+</html>

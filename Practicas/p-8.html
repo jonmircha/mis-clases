@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simulador de Tienda en Línea</title>
     <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 100%;
+      }
+
       body {
-        font-family: Arial, sans-serif;
+        font-family: system-ui, sans-serif;
       }
 
       .product-list,
       .cart {
-        margin: 20px;
+        margin: 1.25rem;
       }
 
       .product-list {
@@ -23,29 +31,23 @@
 
       .product,
       .cart-item {
-        margin-bottom: 10px;
-        padding: 10px;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
         border: 1px solid #ddd;
       }
+
       .cart-item {
         background-color: #f9f9f9;
       }
+
       .cart-item-total {
         font-weight: bold;
       }
+
       .hidden {
         display: none;
       }
-      /* Estilos para el Loader */
-      .loader {
-        border: 8px solid #f3f3f3;
-        border-radius: 50%;
-        border-top: 8px solid #3498db;
-        width: 60px;
-        height: 60px;
-        animation: spin 2s linear infinite;
-        margin: 20px auto;
-      }
+
       @keyframes spin {
         0% {
           transform: rotate(0deg);
@@ -54,10 +56,21 @@
           transform: rotate(360deg);
         }
       }
+
+      .loader {
+        border: 0.5rem solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 0.5rem solid #3498db;
+        width: 4rem;
+        height: 4rem;
+        animation: spin 2s linear infinite;
+        margin: 1.25rem auto;
+      }
+
       .loading-message {
         text-align: center;
-        margin: 20px;
-        font-size: 18px;
+        margin: 1.25rem;
+        font-size: 1.25rem;
       }
     </style>
   </head>

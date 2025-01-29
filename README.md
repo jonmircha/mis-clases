@@ -7,9 +7,10 @@ En este repositorio tengo contenidos, recursos y prácticas para mis clases.
 - [Estudiantes](./Estudiantes.md).
 - [Notas](./Notas.md).
 
-## Notas
+## Recursos
 
-- [Inteligencia Artificial](./Notas/IA.md).
+- [Inteligencia Artificial](./Recursos/IA.md).
+- [Recursos en la _Web_](./Recursos/Web.md).
 - [Prácticas _UX/UI_](https://www.figma.com/design/MWZEiSomJ7v69LuWKqMwZc/Curso-UX-%2F-UI).
 - [Recursos _UX/UI_](https://www.figma.com/design/9I7zbEbJazAxxKo6P4kaIF/Proyectos-y-Recursos-UX-%2F-UI).
 

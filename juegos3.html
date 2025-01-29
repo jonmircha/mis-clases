@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Juego</title>
+  </head>
+  <body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <script>
+      const canvas = document.getElementById("gameCanvas");
+      const ctx = canvas.getContext("2d");
+
+      // Dibuja un cuadrado rojo en el canvas
+      ctx.fillStyle = "red";
+      ctx.fillRect(100, 100, 50, 50);
+
+      let x = 100;
+      let y = 100;
+
+      document.addEventListener("keydown", (event) => {
+        switch (event.key) {
+          case "ArrowUp":
+            y -= 5; // Mover hacia arriba
+            break;
+          case "ArrowDown":
+            y += 5; // Mover hacia abajo
+            break;
+          case "ArrowLeft":
+            x -= 5; // Mover hacia la izquierda
+            break;
+          case "ArrowRight":
+            x += 5; // Mover hacia la derecha
+            break;
+        }
+      });
+
+      // Función para dibujar el cuadrado en su nueva posición
+      function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height); // Limpiar el canvas
+        ctx.fillStyle = "red";
+        ctx.fillRect(x, y, 50, 50); // Dibujar el cuadrado en la nueva posición
+        requestAnimationFrame(draw); // Llamar a la función nuevamente para crear un bucle
+      }
+
+      draw(); // Iniciar el ciclo de dibujo
+
+      let objectX = Math.random() * canvas.width;
+      let objectY = Math.random() * canvas.height;
+
+      function draw2() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Dibujar el personaje
+        ctx.fillStyle = "red";
+        ctx.fillRect(x, y, 50, 50);
+
+        // Dibujar el objeto aleatorio
+        ctx.fillStyle = "blue";
+        ctx.fillRect(objectX, objectY, 50, 50);
+
+        // Verificar colisión simple
+        if (
+          x < objectX + 50 &&
+          x + 50 > objectX &&
+          y < objectY + 50 &&
+          y + 50 > objectY
+        ) {
+          console.log("Colisión detectada!");
+          alert("¡Has chocado con el objeto!");
+          // Reiniciar posición del objeto después de la colisión
+          objectX = Math.random() * canvas.width;
+          objectY = Math.random() * canvas.height;
+        }
+
+        requestAnimationFrame(draw2);
+      }
+
+      draw2();
+    </script>
+  </body>
+</html>

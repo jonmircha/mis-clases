@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios Sesión 6</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      h2 {
+        text-align: center;
+      }
+
+      /* Calculadora */
+      .calculator {
+        width: 300px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+      .calculator input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: right;
+        font-size: 1.2em;
+      }
+      .calculator button {
+        width: 23%;
+        padding: 10px;
+        margin: 1%;
+        font-size: 1.2em;
+      }
+
+      /* Galería de imágenes */
+      .gallery {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .gallery img {
+        width: 150px;
+        height: 100px;
+        object-fit: cover;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s, border-color 0.3s;
+      }
+      .gallery img:hover {
+        transform: scale(1.1);
+        border-color: #333;
+      }
+      .gallery-display {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .gallery-display img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Lista de tareas */
+      .todo-app {
+        width: 300px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+      .todo-app input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 1em;
+      }
+      .todo-app ul {
+        list-style: none;
+        padding: 0;
+      }
+      .todo-app li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+      .todo-app li.completed {
+        text-decoration: line-through;
+        color: #777;
+      }
+      .todo-app button {
+        margin-left: 10px;
+        padding: 5px 10px;
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>1. Calculadora Funcional</h2>
+    <div class="calculator">
+      <input type="text" id="calc-display" readonly />
+      <div>
+        <button onclick="appendNumber('7')">7</button>
+        <button onclick="appendNumber('8')">8</button>
+        <button onclick="appendNumber('9')">9</button>
+        <button onclick="setOperator('/')">/</button>
+      </div>
+      <div>
+        <button onclick="appendNumber('4')">4</button>
+        <button onclick="appendNumber('5')">5</button>
+        <button onclick="appendNumber('6')">6</button>
+        <button onclick="setOperator('*')">*</button>
+      </div>
+      <div>
+        <button onclick="appendNumber('1')">1</button>
+        <button onclick="appendNumber('2')">2</button>
+        <button onclick="appendNumber('3')">3</button>
+        <button onclick="setOperator('-')">-</button>
+      </div>
+      <div>
+        <button onclick="appendNumber('0')">0</button>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="calculateResult()">=</button>
+        <button onclick="setOperator('+')">+</button>
+      </div>
+    </div>
+
+    <h2>2. Galería de Imágenes Interactiva</h2>
+    <div class="gallery">
+      <img
+        src="https://picsum.photos/150/100?random=1"
+        onclick="showImage(this)"
+      />
+      <img
+        src="https://picsum.photos/150/100?random=2"
+        onclick="showImage(this)"
+      />
+      <img
+        src="https://picsum.photos/150/100?random=3"
+        onclick="showImage(this)"
+      />
+      <img
+        src="https://picsum.photos/150/100?random=4"
+        onclick="showImage(this)"
+      />
+    </div>
+    <div class="gallery-display">
+      <img id="gallery-display" src="https://picsum.photos/150/100?random=1" />
+    </div>
+
+    <h2>3. Lista de Tareas</h2>
+    <div class="todo-app">
+      <input type="text" id="todo-input" placeholder="Agregar nueva tarea" />
+      <ul id="todo-list"></ul>
+    </div>
+
+    <script>
+      // Calculadora
+      let display = document.getElementById("calc-display");
+      let operator = "";
+      let firstValue = "";
+
+      function appendNumber(num) {
+        display.value += num;
+      }
+
+      function setOperator(op) {
+        operator = op;
+        firstValue = display.value;
+        display.value = "";
+      }
+
+      function calculateResult() {
+        let secondValue = display.value;
+        display.value = eval(`${firstValue} ${operator} ${secondValue}`);
+      }
+
+      function clearDisplay() {
+        display.value = "";
+        operator = "";
+        firstValue = "";
+      }
+
+      // Galería de imágenes
+      function showImage(img) {
+        document.getElementById("gallery-display").src = img.src;
+      }
+
+      // Lista de tareas
+      let todoInput = document.getElementById("todo-input");
+      let todoList = document.getElementById("todo-list");
+
+      todoInput.addEventListener("keypress", function (e) {
+        if (e.key === "Enter" && todoInput.value.trim() !== "") {
+          addTask(todoInput.value);
+          todoInput.value = "";
+        }
+      });
+
+      function addTask(taskText) {
+        let li = document.createElement("li");
+        li.innerHTML = `
+                <span>${taskText}</span>
+                <button onclick="toggleTask(this)">✔</button>
+                <button onclick="removeTask(this)">✖</button>
+            `;
+        todoList.appendChild(li);
+      }
+
+      function toggleTask(button) {
+        button.parentElement.classList.toggle("completed");
+      }
+
+      function removeTask(button) {
+        button.parentElement.remove();
+      }
+    </script>
+  </body>
+</html>

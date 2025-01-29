@@ -19,7 +19,7 @@ Diferentes enlaces, conceptos y notas que uso en mis clases, estan ordenados de 
   - [Sitios Referencia](#sitios-referencia).
   - [Videos](#videos).
 - [Higiene Digital](#higiene-digital).
-- [Inteligencia Artificial](#inteligencia-artificial).
+- [Inteligencia Artificial](./Notas/IA.md).
 - [_Ignite_](#ignite).
 - [Inversiones](#inversiones).
 - [Marca Personal](#marca-personal).
@@ -46,6 +46,7 @@ Diferentes enlaces, conceptos y notas que uso en mis clases, estan ordenados de 
 ### _Crypto_
 
 - [_Bitcoin Rainbow_](https://www.blockchaincenter.net/en/bitcoin-rainbow-chart/)
+- [_Crypto Bubbles_](https://cryptobubbles.net/)
 - [Documental _Cryptopía_](https://www.youtube.com/watch?v=P6vYyqHG54Y)
 - [Glosario _Web3_](https://blog.bitso.com/es-mx/criptomonedas-mx/glosario-web3)
 - [_Bitcoin_ para tontos](https://pau.ninja/que-es-bitcoin-para-tontos/)
@@ -136,7 +137,6 @@ Diferentes enlaces, conceptos y notas que uso en mis clases, estan ordenados de 
 
 - https://www.apple.com/iphone/
 - https://www.drlarosa.com/comunidad
-- https://bearsandguts.com/
 - https://jonmircha.com/taller-minimalista
 
 [🔼 Regresar](#notas)

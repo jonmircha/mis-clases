@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enemigos que Persiguen</title>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="enemyCanvas" width="800" height="600"></canvas>
+    <script>
+      const canvas = document.getElementById("enemyCanvas");
+      const ctx = canvas.getContext("2d");
+
+      let player = { x: 400, y: 300 };
+      let enemies = [
+        { x: Math.random() * canvas.width, y: Math.random() * canvas.height },
+      ];
+
+      function drawPlayer() {
+        ctx.beginPath();
+        ctx.arc(player.x, player.y, 10, 0, Math.PI * 2);
+        ctx.fillStyle = "green";
+        ctx.fill();
+      }
+
+      function drawEnemies() {
+        enemies.forEach((enemy) => {
+          ctx.beginPath();
+          ctx.arc(enemy.x, enemy.y, 10, 0, Math.PI * 2);
+          ctx.fillStyle = "red";
+          ctx.fill();
+        });
+      }
+
+      function updateEnemies() {
+        enemies.forEach((enemy) => {
+          const dx = player.x - enemy.x;
+          const dy = player.y - enemy.y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+
+          if (distance > 1) {
+            // Evitar que se superpongan
+            enemy.x += dx / distance; // Mover hacia el jugador
+            enemy.y += dy / distance;
+          }
+        });
+      }
+
+      function updateGame() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        drawPlayer();
+        drawEnemies();
+
+        updateEnemies();
+
+        requestAnimationFrame(updateGame);
+      }
+
+      window.addEventListener("mousemove", (event) => {
+        player.x = event.clientX;
+        player.y = event.clientY;
+      });
+
+      updateGame();
+    </script>
+  </body>
+</html>

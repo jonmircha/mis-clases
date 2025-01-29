@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pong en la Web</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+
+      canvas {
+        border: 2px solid white;
+        display: block;
+      }
+
+      .score {
+        position: absolute;
+        top: 20px;
+        font-size: 24px;
+        z-index: 10;
+      }
+
+      .winner-message {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        display: none;
+      }
+
+      .winner-message h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+
+      .winner-message button {
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+      }
+
+      .winner-message button:hover {
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Puntuaciones -->
+    <div class="score">
+      Jugador 1: <span id="score1">0</span> | Jugador 2:
+      <span id="score2">0</span>
+    </div>
+
+    <!-- Mensaje del ganador -->
+    <div class="winner-message" id="winnerMessage">
+      <h1 id="winnerText"></h1>
+      <button id="restartButton">Reiniciar Juego</button>
+    </div>
+
+    <!-- Canvas para el juego -->
+    <canvas id="pongCanvas" width="800" height="400"></canvas>
+
+    <script>
+      // Selección del canvas y contexto
+      const canvas = document.getElementById("pongCanvas");
+      const ctx = canvas.getContext("2d");
+
+      // Variables del juego
+      const paddleWidth = 10;
+      const paddleHeight = 100;
+      const ballRadius = 10;
+      let paddle1Y = (canvas.height - paddleHeight) / 2;
+      let paddle2Y = (canvas.height - paddleHeight) / 2;
+      let ballX = canvas.width / 2;
+      let ballY = canvas.height / 2;
+      let ballSpeedX = 5;
+      let ballSpeedY = 3;
+      let score1 = 0;
+      let score2 = 0;
+      let gameRunning = true;
+
+      const paddleSpeed = 10;
+      let paddle1Direction = 0;
+      let paddle2Direction = 0;
+
+      // Sonidos
+      const soundPaddle = new Audio(
+        "https://freesound.org/data/previews/66/66717_931523-lq.mp3"
+      );
+      const soundWall = new Audio(
+        "https://freesound.org/data/previews/173/173985_2811353-lq.mp3"
+      );
+      const soundWin = new Audio(
+        "https://freesound.org/data/previews/331/331912_3248244-lq.mp3"
+      ); // Sonido de victoria
+
+      // Selección de elementos para el mensaje del ganador
+      const winnerMessage = document.getElementById("winnerMessage");
+      const winnerText = document.getElementById("winnerText");
+      const restartButton = document.getElementById("restartButton");
+
+      // Función para dibujar el campo de juego
+      function drawField() {
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // Línea central discontinua
+        ctx.beginPath();
+        ctx.setLineDash([10, 10]);
+        ctx.strokeStyle = "white";
+        ctx.lineWidth = 2;
+        ctx.moveTo(canvas.width / 2, 0);
+        ctx.lineTo(canvas.width / 2, canvas.height);
+        ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.closePath();
+      }
+
+      // Función para dibujar una paleta
+      function drawPaddle(x, y) {
+        ctx.fillStyle = "white";
+        ctx.fillRect(x, y, paddleWidth, paddleHeight);
+      }
+
+      // Función para dibujar la pelota
+      function drawBall() {
+        ctx.beginPath();
+        ctx.arc(ballX, ballY, ballRadius, 0, Math.PI * 2);
+        ctx.fillStyle = "white";
+        ctx.fill();
+        ctx.closePath();
+      }
+
+      // Función para mover la pelota
+      function moveBall() {
+        ballX += ballSpeedX;
+        ballY += ballSpeedY;
+
+        // Rebote contra las paredes
+        if (ballY - ballRadius <= 0 || ballY + ballRadius >= canvas.height) {
+          ballSpeedY = -ballSpeedY;
+          soundWall.play();
+        }
+
+        // Rebote contra las paletas
+        if (
+          ballX - ballRadius <= paddleWidth &&
+          ballY >= paddle1Y &&
+          ballY <= paddle1Y + paddleHeight
+        ) {
+          ballSpeedX = -ballSpeedX;
+          soundPaddle.play();
+        }
+
+        if (
+          ballX + ballRadius >= canvas.width - paddleWidth &&
+          ballY >= paddle2Y &&
+          ballY <= paddle2Y + paddleHeight
+        ) {
+          ballSpeedX = -ballSpeedX;
+          soundPaddle.play();
+        }
+
+        // Puntuación
+        if (ballX < 0) {
+          score2++;
+          checkWinner();
+          resetBall();
+        }
+
+        if (ballX > canvas.width) {
+          score1++;
+          checkWinner();
+          resetBall();
+        }
+      }
+
+      // Función para mover las paletas
+      function movePaddles() {
+        paddle1Y += paddle1Direction * paddleSpeed;
+        paddle2Y += paddle2Direction * paddleSpeed;
+
+        // Limitar las paletas
+        if (paddle1Y < 0) paddle1Y = 0;
+        if (paddle1Y + paddleHeight > canvas.height)
+          paddle1Y = canvas.height - paddleHeight;
+        if (paddle2Y < 0) paddle2Y = 0;
+        if (paddle2Y + paddleHeight > canvas.height)
+          paddle2Y = canvas.height - paddleHeight;
+      }
+
+      // Función para restablecer la pelota
+      function resetBall() {
+        ballX = canvas.width / 2;
+        ballY = canvas.height / 2;
+        ballSpeedX = -ballSpeedX;
+      }
+
+      // Función para actualizar las puntuaciones
+      function updateScores() {
+        document.getElementById("score1").innerText = score1;
+        document.getElementById("score2").innerText = score2;
+      }
+
+      // Función para comprobar si alguien ha ganado
+      function checkWinner() {
+        if (score1 === 10 || score2 === 10) {
+          gameRunning = false;
+          soundWin.play(); // Reproducir sonido de victoria
+          winnerText.innerText =
+            score1 === 10 ? "¡Jugador 1 gana!" : "¡Jugador 2 gana!";
+          winnerMessage.style.display = "block";
+        }
+      }
+
+      // Función principal
+      function gameLoop() {
+        if (!gameRunning) return;
+        drawField();
+        drawPaddle(0, paddle1Y);
+        drawPaddle(canvas.width - paddleWidth, paddle2Y);
+        drawBall();
+        moveBall();
+        movePaddles();
+        updateScores();
+        requestAnimationFrame(gameLoop);
+      }
+
+      // Detección de teclas
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "w") paddle1Direction = -1;
+        if (e.key === "s") paddle1Direction = 1;
+        if (e.key === "ArrowUp") paddle2Direction = -1;
+        if (e.key === "ArrowDown") paddle2Direction = 1;
+      });
+
+      document.addEventListener("keyup", (e) => {
+        if (e.key === "w" || e.key === "s") paddle1Direction = 0;
+        if (e.key === "ArrowUp" || e.key === "ArrowDown") paddle2Direction = 0;
+      });
+
+      // Reiniciar el juego
+      restartButton.addEventListener("click", () => {
+        score1 = 0;
+        score2 = 0;
+        gameRunning = true;
+        winnerMessage.style.display = "none";
+        resetBall();
+        updateScores();
+        gameLoop();
+      });
+
+      // Iniciar el juego
+      gameLoop();
+    </script>
+  </body>
+</html>

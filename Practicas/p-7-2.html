@@ -3,11 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Validación de Formulario en JavaScript</title>
+    <title>Formulario de Registro de Usuario</title>
     <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 100%;
+      }
+
       body {
-        font-family: Arial, sans-serif;
-        padding: 20px;
+        font-family: system-ui, sans-serif;
       }
 
       form {
@@ -16,39 +23,27 @@
       }
 
       .form-group {
-        margin-bottom: 15px;
+        margin-bottom: 1rem;
       }
 
       .form-group label {
         display: block;
-        margin-bottom: 5px;
+        margin-bottom: 0.25rem;
       }
 
       .form-group input {
         width: 100%;
-        padding: 8px;
+        padding: 0.5rem;
         box-sizing: border-box;
       }
-
       .error {
         color: red;
-        font-size: 0.9em;
+        font-size: 85%;
       }
       .success {
         color: green;
-        font-size: 1em;
+        font-size: 1rem;
         text-align: center;
-      }
-
-      .loader {
-        border: 8px solid #f3f3f3;
-        border-top: 8px solid #3498db;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        animation: spin 2s linear infinite;
-        display: none;
-        margin: 20px auto;
       }
 
       @keyframes spin {
@@ -58,6 +53,17 @@
         100% {
           transform: rotate(360deg);
         }
+      }
+
+      .loader {
+        border: 0.5rem solid #f3f3f3;
+        border-top: 0.5rem solid #3498db;
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+        animation: spin 2s linear infinite;
+        display: none;
+        margin: 1.25rem auto;
       }
     </style>
   </head>
@@ -85,123 +91,97 @@
         <div class="error" id="confirm-password-error"></div>
       </div>
       <button type="submit">Registrarse</button>
+      <div class="loader"></div>
       <div class="success" id="success-message"></div>
     </form>
-    <div class="loader"></div>
-    <div class="success" id="success-message"></div>
     <script>
-      // Obtener referencias a los elementos del formulario
-      const form = document.getElementById("register-form");
-      const nameInput = document.getElementById("name");
-      const emailInput = document.getElementById("email");
-      const passwordInput = document.getElementById("password");
-      const confirmPasswordInput = document.getElementById("confirm-password");
-      const successMessage = document.getElementById("success-message");
-      const loader = document.querySelector(".loader");
+      const d = document;
+      const $form = d.querySelector("#register-form");
+      const $nameInput = d.querySelector("#name");
+      const $nameError = d.querySelector("#name-error");
+      const $emailInput = d.querySelector("#email");
+      const $emailError = d.querySelector("#email-error");
+      const $passwordInput = d.querySelector("#password");
+      const $passwordError = d.querySelector("#password-error");
+      const $confirmPasswordInput = d.querySelector("#confirm-password");
+      const $confirmPasswordError = d.querySelector("#confirm-password-error");
+      const $successMessage = d.querySelector("#success-message");
+      const $errorsMessages = d.querySelectorAll(".error");
+      const $loader = d.querySelector(".loader");
 
-      // Función de validación del formulario
-      function validateForm(event) {
+      // Función de Validación del Formulario
+      function validateForm(e) {
         // Reiniciar mensajes de error y éxito
-        document.querySelectorAll(".error").forEach((errorElement) => {
-          errorElement.innerText = "";
+        $errorsMessages.forEach((el) => {
+          el.innerText = "";
         });
-        successMessage.innerText = "";
+        $successMessage.innerText = "";
 
         let isValid = true;
 
         // Validar Nombre (solo letras y espacios)
-        const namePattern = /^[A-Za-z\s]+$/;
-        if (nameInput.value.trim() === "") {
-          document.getElementById("name-error").innerText =
-            "El nombre es obligatorio.";
+        let namePattern = /^[A-Za-z\s]+$/;
+
+        // Validar Nombre
+        if ($nameInput.value.trim() === "") {
+          $nameError.innerText = "El nombre es obligatorio.";
           isValid = false;
-        } else if (!namePattern.test(nameInput.value.trim())) {
-          document.getElementById("name-error").innerText =
+        } else if (!namePattern.test($nameInput.value.trim())) {
+          $nameError.innerText =
             "El nombre solo puede contener letras y espacios.";
           isValid = false;
         }
 
         // Validar Correo Electrónico
-        const emailPattern = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
-        if (emailInput.value.trim() === "") {
-          document.getElementById("email-error").innerText =
-            "El correo electrónico es obligatorio.";
+        let emailPattern = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
+        if ($emailInput.value.trim() === "") {
+          $emailError.innerText = "El correo electrónico es obligatorio.";
           isValid = false;
-        } else if (!emailPattern.test(emailInput.value.trim())) {
-          document.getElementById("email-error").innerText =
-            "El formato del correo es inválido.";
+        } else if (!emailPattern.test($emailInput.value.trim())) {
+          $emailError.innerText = "El formato del correo es inválido.";
           isValid = false;
         }
 
-        // Validar Contraseña (complejidad)
-        const passwordPattern =
+        // Validar Contraseña
+        let passwordPattern =
           /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
-        if (passwordInput.value.trim() === "") {
-          document.getElementById("password-error").innerText =
-            "La contraseña es obligatoria.";
+
+        if ($passwordInput.value.trim() === "") {
+          $passwordError.innerText = "La contraseña es obligatoria.";
           isValid = false;
-        } else if (!passwordPattern.test(passwordInput.value.trim())) {
-          document.getElementById("password-error").innerText =
+        } else if (!passwordPattern.test($passwordInput.value.trim())) {
+          $passwordError.innerText =
             "La contraseña debe tener al menos 8 caracteres, incluyendo un número, una letra mayúscula, una letra minúscula y un carácter especial.";
           isValid = false;
         }
 
         // Validar Confirmación de Contraseña
-        if (confirmPasswordInput.value.trim() !== passwordInput.value.trim()) {
-          document.getElementById("confirm-password-error").innerText =
-            "Las contraseñas no coinciden.";
+        if (
+          $confirmPasswordInput.value.trim() !== $passwordInput.value.trim()
+        ) {
+          $confirmPasswordError.innerText = "Las contraseñas no coinciden.";
           isValid = false;
         }
 
         // Prevenir el envío del formulario si hay errores
         if (!isValid) {
-          event.preventDefault();
+          e.preventDefault();
         } else {
-          event.preventDefault();
-          // Guardar datos en localStorage
-          saveToLocalStorage();
+          e.preventDefault();
+
           // Mostrar el loader y simular espera de 5 segundos
-          loader.style.display = "block";
+          $loader.style.display = "block";
           setTimeout(() => {
-            loader.style.display = "none";
-            successMessage.innerText =
-              "Formulario enviado exitosamente. Datos guardados en el navegador.";
+            $loader.style.display = "none";
+            $successMessage.innerText = "Formulario enviado exitosamente.";
+            $form.reset();
           }, 5000);
+          // Aquí puedes manejar el envío real de datos a un servidor, por ejemplo, usando fetch.
         }
       }
 
-      // Función para guardar los datos en localStorage
-      function saveToLocalStorage() {
-        const userData = {
-          name: nameInput.value.trim(),
-          email: emailInput.value.trim(),
-          password: passwordInput.value.trim(),
-        };
-        localStorage.setItem("userData", JSON.stringify(userData));
-      }
-
-      // Función para cargar los datos desde localStorage
-      function loadFromLocalStorage() {
-        const savedData = localStorage.getItem("userData");
-        if (savedData) {
-          const userData = JSON.parse(savedData);
-          nameInput.value = userData.name;
-          emailInput.value = userData.email;
-          passwordInput.value = userData.password;
-        }
-      }
-
-      // Cargar datos desde localStorage al cargar la página
-      document.addEventListener("DOMContentLoaded", function () {
-        //loadFromLocalStorage();
-        form.addEventListener("submit", validateForm);
-      });
-
-      /* 
-        Reto 4: Implementar una Validación de Campos Obligatorios Dinámica
-      
-        Añade un nuevo campo de teléfono al formulario y asegúrate de que se valide correctamente. Luego, implementa una función que valide de manera dinámica cualquier campo marcado como obligatorio (añadiendo un atributo required a los campos) sin necesidad de verificar cada campo manualmente en el código.
-      */
+      // Manejar el evento de envío del formulario
+      $form.addEventListener("submit", validateForm);
     </script>
   </body>
 </html>

@@ -5,33 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario de Registro de Usuario</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        padding: 20px;
+      * {
+        box-sizing: border-box;
       }
+
+      html {
+        font-size: 100%;
+      }
+
+      body {
+        font-family: system-ui, sans-serif;
+        padding: 1.25rem;
+      }
+
       form {
         max-width: 400px;
         margin: auto;
       }
+
       .form-group {
-        margin-bottom: 15px;
+        margin-bottom: 1rem;
       }
+
       .form-group label {
         display: block;
-        margin-bottom: 5px;
+        margin-bottom: 0.25rem;
       }
+
       .form-group input {
         width: 100%;
-        padding: 8px;
+        padding: 0.5rem;
         box-sizing: border-box;
       }
+
       .error {
         color: red;
-        font-size: 0.9em;
+        font-size: 85%;
       }
+
       .success {
         color: green;
-        font-size: 1em;
+        font-size: 1rem;
         text-align: center;
       }
     </style>
@@ -63,77 +77,76 @@
       <div class="success" id="success-message"></div>
     </form>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.getElementById("register-form");
-        const nameInput = document.getElementById("name");
-        const emailInput = document.getElementById("email");
-        const passwordInput = document.getElementById("password");
-        const confirmPasswordInput =
-          document.getElementById("confirm-password");
-        const successMessage = document.getElementById("success-message");
+      const d = document;
+      const $form = d.querySelector("#register-form");
+      const $nameInput = d.querySelector("#name");
+      const $nameError = d.querySelector("#name-error");
+      const $emailInput = d.querySelector("#email");
+      const $emailError = d.querySelector("#email-error");
+      const $passwordInput = d.querySelector("#password");
+      const $passwordError = d.querySelector("#password-error");
+      const $confirmPasswordInput = d.querySelector("#confirm-password");
+      const $confirmPasswordError = d.querySelector("#confirm-password-error");
+      const $successMessage = d.querySelector("#success-message");
+      const $errorsMessages = d.querySelectorAll(".error");
 
-        // Función de Validación del Formulario
-        function validateForm(event) {
-          // Reiniciar mensajes de error y éxito
-          document.querySelectorAll(".error").forEach((errorElement) => {
-            errorElement.innerText = "";
-          });
-          successMessage.innerText = "";
+      // Función de Validación del Formulario
+      function validateForm(e) {
+        // Reiniciar mensajes de error y éxito
+        $errorsMessages.forEach((el) => {
+          el.innerText = "";
+        });
+        $successMessage.innerText = "";
 
-          let isValid = true;
+        let isValid = true;
 
-          // Validar Nombre
-          if (nameInput.value.trim() === "") {
-            document.getElementById("name-error").innerText =
-              "El nombre es obligatorio.";
-            isValid = false;
-          }
-
-          // Validar Correo Electrónico
-          const emailPattern = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
-          if (emailInput.value.trim() === "") {
-            document.getElementById("email-error").innerText =
-              "El correo electrónico es obligatorio.";
-            isValid = false;
-          } else if (!emailPattern.test(emailInput.value.trim())) {
-            document.getElementById("email-error").innerText =
-              "El formato del correo es inválido.";
-            isValid = false;
-          }
-
-          // Validar Contraseña
-          if (passwordInput.value.trim() === "") {
-            document.getElementById("password-error").innerText =
-              "La contraseña es obligatoria.";
-            isValid = false;
-          } else if (passwordInput.value.trim().length < 8) {
-            document.getElementById("password-error").innerText =
-              "La contraseña debe tener al menos 8 caracteres.";
-            isValid = false;
-          }
-
-          // Validar Confirmación de Contraseña
-          if (
-            confirmPasswordInput.value.trim() !== passwordInput.value.trim()
-          ) {
-            document.getElementById("confirm-password-error").innerText =
-              "Las contraseñas no coinciden.";
-            isValid = false;
-          }
-
-          // Prevenir el envío del formulario si hay errores
-          if (!isValid) {
-            event.preventDefault();
-          } else {
-            event.preventDefault();
-            successMessage.innerText = "Formulario enviado exitosamente.";
-            // Aquí puedes manejar el envío real de datos a un servidor, por ejemplo, usando fetch.
-          }
+        // Validar Nombre
+        if ($nameInput.value.trim() === "") {
+          $nameError.innerText = "El nombre es obligatorio.";
+          isValid = false;
         }
 
-        // Manejar el evento de envío del formulario
-        form.addEventListener("submit", validateForm);
-      });
+        // Validar Correo Electrónico
+        let emailPattern = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
+        if ($emailInput.value.trim() === "") {
+          $emailError.innerText = "El correo electrónico es obligatorio.";
+          isValid = false;
+        } else if (!emailPattern.test($emailInput.value.trim())) {
+          $emailError.innerText = "El formato del correo es inválido.";
+          isValid = false;
+        }
+
+        // Validar Contraseña
+        if ($passwordInput.value.trim() === "") {
+          $passwordError.innerText = "La contraseña es obligatoria.";
+          isValid = false;
+        } else if ($passwordInput.value.trim().length < 8) {
+          $passwordError.innerText =
+            "La contraseña debe tener al menos 8 caracteres.";
+          isValid = false;
+        }
+
+        // Validar Confirmación de Contraseña
+        if (
+          $confirmPasswordInput.value.trim() !== $passwordInput.value.trim()
+        ) {
+          $confirmPasswordError.innerText = "Las contraseñas no coinciden.";
+          isValid = false;
+        }
+
+        // Prevenir el envío del formulario si hay errores
+        if (!isValid) {
+          e.preventDefault();
+        } else {
+          e.preventDefault();
+          $successMessage.innerText = "Formulario enviado exitosamente.";
+          // Aquí puedes manejar el envío real de datos a un servidor, por ejemplo, usando fetch.
+          $form.reset();
+        }
+      }
+
+      // Manejar el evento de envío del formulario
+      $form.addEventListener("submit", validateForm);
     </script>
   </body>
 </html>

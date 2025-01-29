@@ -5,16 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simulador de Tienda en Línea</title>
     <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 100%;
+      }
+
+      body {
+        font-family: system-ui, sans-serif;
+      }
+
       .producto {
         border: 1px solid #ccc;
-        padding: 10px;
-        margin: 5px;
+        padding: 0.5rem;
+        margin: 0.25rem;
       }
+
       .carrito {
         border: 2px solid #444;
-        padding: 10px;
-        margin-top: 20px;
+        padding: 0.5rem;
+        margin-top: 1.25rem;
       }
+
       .hidden {
         display: none;
       }
@@ -22,30 +36,51 @@
   </head>
   <body>
     <h1>Simulador de Tienda en Línea</h1>
-    <div id="productos">
-      <div class="producto" data-nombre="Camiseta" data-precio="15">
+    <section id="productos">
+      <h2>Productos</h2>
+      <article
+        class="producto"
+        data-id="1"
+        data-nombre="Camiseta"
+        data-precio="15"
+      >
         Camiseta - $15
-      </div>
-      <div class="producto" data-nombre="Pantalones" data-precio="25">
+      </article>
+      <article
+        class="producto"
+        data-id="2"
+        data-nombre="Pantalones"
+        data-precio="25"
+      >
         Pantalones - $25
-      </div>
-      <div class="producto" data-nombre="Zapatos" data-precio="50">
+      </article>
+      <article
+        class="producto"
+        data-id="3"
+        data-nombre="Zapatos"
+        data-precio="50"
+      >
         Zapatos - $50
-      </div>
-      <div class="producto" data-nombre="Sombrero" data-precio="10">
+      </article>
+      <article
+        class="producto"
+        data-id="4"
+        data-nombre="Sombrero"
+        data-precio="10"
+      >
         Sombrero - $10
-      </div>
-    </div>
-    <div id="carrito" class="carrito">
-      <h2>Carrito de Compras</h2>
-      <ul id="listaCarrito"></ul>
-      <p>Total: $<span id="totalCarrito">0</span></p>
-      <button id="btnComprar">Comprar</button>
-    </div>
-    <div id="mensajeCompra" class="hidden">
+      </article>
+    </section>
+    <section id="mensaje-compra" class="hidden">
       <h2>¡Compra realizada con éxito!</h2>
       <p>Gracias por su compra.</p>
-    </div>
+    </section>
+    <section id="carrito" class="carrito">
+      <h2>Carrito de Compras</h2>
+      <ul id="lista-carrito"></ul>
+      <p>Total: $<span id="total-carrito">0</span></p>
+      <button id="btn-compra">Comprar</button>
+    </section>
     <script>
       console.log("Información de la ventana:");
       console.log("Ancho de la ventana:", window.innerWidth);
@@ -57,69 +92,55 @@
       console.log("\nInformación del navegador:");
       console.log("User Agent:", navigator.userAgent);
 
-      const productos = document.querySelectorAll(".producto");
-      const listaCarrito = document.querySelector("#listaCarrito");
-      const totalCarrito = document.querySelector("#totalCarrito");
-      const btnComprar = document.querySelector("#btnComprar");
-      const mensajeCompra = document.querySelector("#mensajeCompra");
+      const d = document;
+      const $listaCarrito = d.querySelector("#lista-carrito");
+      const $totalCarrito = d.querySelector("#total-carrito");
+      const $btnCompra = d.querySelector("#btn-compra");
+      const $mensajeCompra = d.querySelector("#mensaje-compra");
+      const $carrito = d.querySelector("#carrito");
 
-      productos.forEach((producto) => {
-        producto.addEventListener("click", () => {
-          const nombre = producto.getAttribute("data-nombre");
-          const precio = parseFloat(producto.getAttribute("data-precio"));
-
-          // Crear un elemento de lista para el carrito
-          const itemCarrito = document.createElement("li");
-          itemCarrito.innerText = `${nombre} - $${precio}`;
-
-          // Insertar el elemento al carrito
-          listaCarrito.appendChild(itemCarrito);
-
-          // Actualizar el total del carrito
-          const totalActual = parseFloat(totalCarrito.innerText);
-          totalCarrito.innerText = (totalActual + precio).toFixed(2);
-        });
-      });
-
-      btnComprar.addEventListener("click", () => {
-        if (listaCarrito.children.length > 0) {
-          // Ocultar el carrito y mostrar el mensaje de compra
-          document.querySelector("#carrito").classList.add("hidden");
-          mensajeCompra.classList.remove("hidden");
-        } else {
-          alert("El carrito está vacío, no se puede realizar la compra.");
+      d.addEventListener("click", (e) => {
+        if (!e.target.matches(".producto")) {
+          return false;
         }
-      });
 
-      // Cambiar el color de fondo del carrito cuando se añaden productos
-      productos.forEach((producto) => {
-        producto.addEventListener("click", () => {
-          document.querySelector("#carrito").style.backgroundColor = "#f4f4f4";
-        });
-      });
+        const $producto = e.target;
+        let nombre = $producto.getAttribute("data-nombre");
+        let precio = parseFloat($producto.getAttribute("data-precio"));
 
-      // Cambiar la visibilidad del botón comprar basado en el contenido del carrito
-      listaCarrito.addEventListener("DOMNodeInserted", () => {
-        if (listaCarrito.children.length > 0) {
-          btnComprar.classList.remove("hidden");
-        }
+        // Crear un elemento de lista para el carrito
+        const $itemCarrito = d.createElement("li");
+        $itemCarrito.innerText = `${nombre} - $${precio}`;
+
+        // Insertar el elemento al carrito
+        $listaCarrito.appendChild($itemCarrito);
+
+        // Actualizar el total del carrito
+        let totalActual = parseFloat($totalCarrito.innerText);
+        $totalCarrito.innerText = (totalActual + precio).toFixed(2);
       });
 
       // Evento para delegar la eliminación de productos desde el carrito
-      listaCarrito.addEventListener("click", (event) => {
-        if (event.target.tagName === "LI") {
-          const item = event.target;
-          const precio = parseFloat(item.innerText.split("- $")[1]);
-          item.remove(); // Remover el item del carrito
+      $listaCarrito.addEventListener("click", (e) => {
+        if (e.target.tagName === "LI") {
+          const $item = e.target;
+          $item.remove(); // Remover el item del carrito
+          let precio = parseFloat($item.innerText.split("- $")[1]);
 
           // Actualizar el total del carrito
-          const totalActual = parseFloat(totalCarrito.innerText);
-          totalCarrito.innerText = (totalActual - precio).toFixed(2);
+          let totalActual = parseFloat($totalCarrito.innerText);
+          $totalCarrito.innerText = (totalActual - precio).toFixed(2);
+        }
+      });
 
-          // Ocultar el botón de compra si el carrito está vacío
-          if (listaCarrito.children.length === 0) {
-            btnComprar.classList.add("hidden");
-          }
+      $btnCompra.addEventListener("click", (e) => {
+        if ($listaCarrito.children.length > 0) {
+          // Ocultar el carrito y mostrar el mensaje de compra
+          $carrito.classList.add("hidden");
+          $mensajeCompra.classList.remove("hidden");
+        } else {
+          alert("El carrito está vacío, no se puede realizar la compra.");
+          $btnCompra.classList.add("hidden");
         }
       });
     </script>

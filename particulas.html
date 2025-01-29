@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Partículas</title>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="particleCanvas" width="800" height="600"></canvas>
+    <script>
+      const canvas = document.getElementById("particleCanvas");
+      const ctx = canvas.getContext("2d");
+
+      const particles = [];
+      const numParticles = 100;
+
+      for (let i = 0; i < numParticles; i++) {
+        particles.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          vx: (Math.random() - 0.5) * 2,
+          vy: (Math.random() - 0.5) * 2,
+        });
+      }
+
+      function drawParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach((p) => {
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, 5, 0, Math.PI * 2);
+          ctx.fillStyle = "rgba(255, 165, 0, 0.7)";
+          ctx.fill();
+        });
+      }
+
+      function updateParticles() {
+        particles.forEach((p) => {
+          p.x += p.vx;
+          p.y += p.vy;
+
+          // Rebote en los bordes
+          if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+          if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+        });
+
+        drawParticles();
+        requestAnimationFrame(updateParticles);
+      }
+
+      updateParticles();
+    </script>
+  </body>
+</html>

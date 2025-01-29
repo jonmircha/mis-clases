@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Juego</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <script>
+      const canvas = document.getElementById("gameCanvas");
+      const ctx = canvas.getContext("2d");
+
+      let player = {
+        x: 50,
+        y: 50,
+        width: 50,
+        height: 50,
+        color: "green",
+        speed: 5,
+      };
+
+      let enemy = {
+        x: 200,
+        y: 200,
+        width: 50,
+        height: 50,
+        color: "red",
+        speed: 2,
+      };
+
+      function drawRect(rect) {
+        ctx.fillStyle = rect.color;
+        ctx.fillRect(rect.x, rect.y, rect.width, rect.height);
+      }
+
+      function gameLoop() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        drawRect(player);
+        drawRect(enemy);
+
+        player.x += player.speed;
+
+        if (player.x + player.width > canvas.width) {
+          player.speed = -player.speed;
+        }
+
+        if (player.x < 0) {
+          player.speed = -player.speed;
+        }
+
+        enemy.x += enemy.speed;
+
+        if (enemy.x + enemy.width > canvas.width) {
+          enemy.speed = -enemy.speed;
+        }
+
+        if (enemy.x < 0) {
+          enemy.speed = -enemy.speed;
+        }
+
+        requestAnimationFrame(gameLoop);
+      }
+
+      gameLoop();
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowRight") player.x += player.speed;
+        if (event.key === "ArrowLeft") player.x -= player.speed;
+        if (event.key === "ArrowUp") player.y -= player.speed;
+        if (event.key === "ArrowDown") player.y += player.speed;
+      });
+
+      function isColliding(rect1, rect2) {
+        return (
+          rect1.x < rect2.x + rect2.width &&
+          rect1.x + rect1.width > rect2.x &&
+          rect1.y < rect2.y + rect2.height &&
+          rect1.y + rect1.height > rect2.y
+        );
+      }
+
+      function updateGame() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        drawRect(player);
+        drawRect(enemy);
+
+        if (isColliding(player, enemy)) {
+          player.color = "blue";
+        } else {
+          player.color = "green";
+        }
+
+        requestAnimationFrame(updateGame);
+      }
+    </script>
+  </body>
+</html>
