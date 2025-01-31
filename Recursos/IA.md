@@ -14,7 +14,7 @@ La inteligencia artificial se basa en el uso de algoritmos y modelos matemático
 ### Video Tutoriales _IA_
 
 - [Canal de Mari Fuentes](https://www.youtube.com/@MariFuentes/videos).
-- [Canal de Andrea Bytes](https://www.youtube.com/@andreabytes/videos)
+- [Canal de Andrea Bytes](https://www.youtube.com/@andreabytes/videos).
 - [Errores que cometes al usar ChatGPT](https://www.youtube.com/watch?v=JOJpO-q2dW8).
 
 ### Recomendaciones para escribir _prompts_
@@ -37,6 +37,7 @@ La inteligencia artificial se basa en el uso de algoritmos y modelos matemático
 - https://chat.openai.com/chat
 - https://aistudio.google.com/
 - https://www.deepseek.com/
+- https://qwenlm.ai/
 - https://endless.io/es
 - https://claude.ai/
 - https://mistral.ai/
@@ -144,6 +145,11 @@ La inteligencia artificial se basa en el uso de algoritmos y modelos matemático
 - https://bolt.diy
 - https://v0.dev/
 - https://www.trae.ai/
+
+### Videojuegos
+
+- https://deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model/
+- https://www.youtube.com/watch?v=x6Dy-8O0gEg
 
 [🔼 Regresar](#inteligencia-artificial)
 
